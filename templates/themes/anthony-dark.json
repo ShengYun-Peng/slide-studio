@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "name": "Anthony dark",
+  "background": "#2B2B2D",
+  "foreground": "#F6F6F4",
+  "muted": "#BAC1CC",
+  "panel": "#36383D",
+  "accents": [
+    "#7ABC73",
+    "#66A7FF",
+    "#FFB253"
+  ],
+  "font_regular": "HelveticaNeue",
+  "font_bold": "HelveticaNeue-Bold",
+  "title_size": 64,
+  "body_size": 44,
+  "label_size": 32,
+  "caption_size": 28,
+  "line_width": 6,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "notes_size": 25
+}

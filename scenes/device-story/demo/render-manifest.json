@@ -1,0 +1,33 @@
+{
+  "asset_rights" : "Apple hardware footage: review before redistribution",
+  "duration" : 16.5,
+  "fps" : 60,
+  "height" : 1080,
+  "kind" : "device-story",
+  "outputs" : [
+    "poster.png",
+    "end.png",
+    "contact-sheet.png"
+  ],
+  "poster_time" : 2.2000000000000002,
+  "preview_times" : [
+    0.84999999999999998,
+    2.2000000000000002,
+    4.7999999999999998,
+    8.8499999999999996,
+    12.4,
+    15.300000000000001
+  ],
+  "renderer" : "Photographic registered-lid composite + configurable original UI",
+  "schema_version" : 1,
+  "scientific_status" : "conceptual",
+  "video" : {
+    "codec" : "H.264",
+    "duration" : 16.5,
+    "filename" : "movie.mp4",
+    "fps" : 60,
+    "frames" : 990,
+    "silent" : true
+  },
+  "width" : 1920
+}

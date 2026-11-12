@@ -1,0 +1,1 @@
+Of course, a clear recommendation can still be wrong. So the interface should show what it used, flag readings that need another look, and ask before doing something hard to undo. That makes uncertainty something people can work with.

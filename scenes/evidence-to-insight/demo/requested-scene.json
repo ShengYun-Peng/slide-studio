@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "kind": "evidence-to-insight",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "duration": 8.5,
+  "theme": {
+    "schema_version": 1,
+    "name": "Anthony dark",
+    "background": "#2B2B2D",
+    "foreground": "#F6F6F4",
+    "muted": "#BAC1CC",
+    "panel": "#36383D",
+    "accents": [
+      "#7ABC73",
+      "#66A7FF",
+      "#FFB253"
+    ],
+    "font_regular": "HelveticaNeue",
+    "font_bold": "HelveticaNeue-Bold",
+    "title_size": 64,
+    "body_size": 44,
+    "label_size": 32,
+    "caption_size": 28,
+    "line_width": 6,
+    "canvas": [
+      1920,
+      1080
+    ],
+    "notes_size": 25
+  },
+  "content": {
+    "title": "The biggest gains appear when data is scarce.",
+    "eyebrow": "EVIDENCE → INSIGHT",
+    "baseline": [
+      50,
+      57,
+      63,
+      68,
+      73,
+      77,
+      80,
+      82,
+      84
+    ],
+    "proposed": [
+      62,
+      72,
+      78,
+      82,
+      85,
+      87,
+      89,
+      90,
+      91
+    ],
+    "baseline_label": "Baseline",
+    "proposed_label": "Proposed",
+    "x_ticks": [
+      "1k",
+      "4k",
+      "16k",
+      "64k"
+    ],
+    "y_label": "Accuracy (%)",
+    "x_label": "Training examples (log scale)",
+    "delta_label": "+15",
+    "insight_heading": "Early gains",
+    "insight_line1": "More signal",
+    "insight_line2": "from less data.",
+    "insight_detail": "Highlight the regime,",
+    "insight_detail2": "not every data point.",
+    "footnote": "Illustrative example · Replace with your evidence"
+  },
+  "timing": {
+    "axes_start": 0.2,
+    "axes_end": 1.0,
+    "curves_start": 1.5,
+    "curves_end": 4.4,
+    "focus_start": 4.9,
+    "focus_end": 6.3
+  },
+  "poster_time": 8.1,
+  "preview_times": [
+    0,
+    1.7,
+    3.4,
+    5.1,
+    6.8,
+    8.5
+  ],
+  "data_status": "illustrative",
+  "renderer": "runtime/renderers/presentation-patterns.swift"
+}

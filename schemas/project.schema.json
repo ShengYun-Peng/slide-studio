@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Slide Studio project",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "title",
+    "theme",
+    "storyboard"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "speaking_wpm": {
+      "type": "number",
+      "minimum": 60,
+      "maximum": 250
+    },
+    "storyboard": {
+      "type": "string",
+      "description": "Project-relative JSON path. No absolute paths or parent escapes."
+    }
+  },
+  "additionalProperties": true
+}

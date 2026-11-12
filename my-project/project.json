@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "title": "Smarter Decisions for Urban Gardens",
+  "theme": "anthony-dark",
+  "duration_minutes": 5,
+  "speaking_wpm": 140,
+  "storyboard": "storyboard.json",
+  "purpose": "Illustrative cold-start example. No empirical results are claimed."
+}

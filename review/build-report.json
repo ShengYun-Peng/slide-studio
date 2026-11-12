@@ -1,0 +1,172 @@
+{
+  "status": "ready for local review; not published",
+  "independent_from_original_defense": true,
+  "default_runtime_requires_historical_assets": false,
+  "environment": {
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "macos_native_rendering": true,
+    "swiftc": true,
+    "keynote_installed": true,
+    "pdftotext": false,
+    "no_api_key_required": true
+  },
+  "sample": {
+    "slides": 9,
+    "editable_text_objects": 65,
+    "native_movies": 1,
+    "notes": "25pt native adaptive black; readback verified",
+    "verification": "my-project/build/verification.json"
+  },
+  "native_tests": [
+    "8-archetype template exported and visually inspected",
+    "9-slide sample exported and representative pages inspected",
+    "Unicode bold notes, circular crop, native movie import, slide reordering and notes conflict protection passed"
+  ],
+  "unit_tests": {
+    "passed": 13,
+    "native_test": "passed separately; skipped in default unit run"
+  },
+  "scene_verifications": [
+    {
+      "scene": "branch-and-merge",
+      "verification": {
+        "actual_duration": 8,
+        "actual_fps": 30,
+        "actual_height": 720,
+        "actual_width": 1280,
+        "frames_decoded": 240,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "device-story",
+      "verification": {
+        "actual_duration": 10,
+        "actual_fps": 30,
+        "actual_height": 720,
+        "actual_width": 1280,
+        "frames_decoded": 300,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "framework-to-portfolio",
+      "verification": {
+        "actual_duration": 9,
+        "actual_fps": 30.000001907348633,
+        "actual_height": 720,
+        "actual_width": 1280,
+        "frames_decoded": 270,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "learn-visual-vocabulary",
+      "verification": {
+        "actual_duration": 8,
+        "actual_fps": 30,
+        "actual_height": 720,
+        "actual_width": 1280,
+        "frames_decoded": 240,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "masked-token-training",
+      "verification": {
+        "actual_duration": 8,
+        "actual_fps": 30,
+        "actual_height": 720,
+        "actual_width": 1280,
+        "frames_decoded": 240,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "surface-build",
+      "verification": {
+        "actual_duration": 8,
+        "actual_fps": 30,
+        "actual_height": 720,
+        "actual_width": 1280,
+        "frames_decoded": 240,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "surface-trajectories",
+      "verification": {
+        "actual_duration": 8,
+        "actual_fps": 30,
+        "actual_height": 720,
+        "actual_width": 1280,
+        "frames_decoded": 240,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "text-and-score",
+      "verification": {
+        "actual_duration": 9,
+        "actual_fps": 30.000001907348633,
+        "actual_height": 720,
+        "actual_width": 1280,
+        "frames_decoded": 270,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "video-budget",
+      "verification": {
+        "actual_duration": 8,
+        "actual_fps": 30,
+        "actual_height": 720,
+        "actual_width": 1280,
+        "frames_decoded": 240,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    }
+  ],
+  "cold_start": "cold-start-report.json",
+  "cold_start_findings_resolved": [
+    "Duration overrides now retime inherited events, posters, and preview timestamps; out-of-range events fail validation. Regression test added.",
+    "Declared Python minimum now matches tested Python 3.9.6."
+  ],
+  "non_blocking_observations": [
+    "The native video verifier currently emits AVFoundation deprecation warnings; decoding checks pass."
+  ],
+  "manual_review_required": [
+    "Set or confirm movie autoplay inside Keynote; AppleScript does not expose the checkbox. Slide advance remains manual.",
+    "Native presenter-notes appearance should be confirmed in the reviewing user’s actual dark/light notes pane.",
+    "Review scientific meaning, narration pace, and visual fit after replacing sample content."
+  ],
+  "release_note": "assets/reference is local-only by default and ignored by Git; public license and third-party redistribution are not yet selected or approved."
+}

@@ -1,0 +1,1 @@
+To wrap up this example, the goal is to make the next action easier to understand. Connect a reading to a decision. Show the reason and the uncertainty. And keep people involved in what happens next. Those three ideas give the talk a clear ending.

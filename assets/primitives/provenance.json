@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "path": "assets/primitives/curved-connectors.svg",
+      "sha256": "fd7189867302d3f0b1699df0ac3a000c653005a106a66deed56e5d1c73d5207a",
+      "origin": "Original vector component authored for Slide Studio",
+      "rights_status": "original project material",
+      "requires_external_asset": false
+    },
+    {
+      "path": "assets/primitives/laptop-shell.svg",
+      "sha256": "4edcad5e155dc1a66f2f0fd94c65239312b2657945a270fe9e570c55942b2c15",
+      "origin": "Original vector component authored for Slide Studio",
+      "rights_status": "original project material",
+      "requires_external_asset": false
+    },
+    {
+      "path": "assets/primitives/table-image.svg",
+      "sha256": "a45d3460d249b7d3d630a8d110bb296ba7df4fa8153b20fea89808e932c5a64f",
+      "origin": "Original vector component authored for Slide Studio",
+      "rights_status": "original project material",
+      "requires_external_asset": false
+    },
+    {
+      "path": "assets/primitives/three-part-rings.svg",
+      "sha256": "5b6646de127f8c837c7c903f268b2f5308a5f7499e7bcd7fccb258cfcfc521e5",
+      "origin": "Original vector component authored for Slide Studio",
+      "rights_status": "original project material",
+      "requires_external_asset": false
+    }
+  ]
+}

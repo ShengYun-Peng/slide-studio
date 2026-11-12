@@ -1,0 +1,1 @@
+How would we test this idea? These three columns give us a starting point: usefulness, reliability, and control. We would check whether people can choose a task, whether the advice survives a faulty sensor, and whether they can correct a bad suggestion. These are evaluation questions, not reported results.

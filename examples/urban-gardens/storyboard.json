@@ -1,0 +1,196 @@
+{
+  "slides": [
+    {
+      "id": "garden-promise",
+      "layout": "title",
+      "title": "Smarter Decisions for\nUrban Gardens",
+      "subtitle": "A sample talk about turning observations into useful action",
+      "presenter": "Your name · Your organization",
+      "notes": "notes/garden-promise.md",
+      "claim_type": "illustrative"
+    },
+    {
+      "id": "garden-question",
+      "layout": "question",
+      "title": "Which beds need\nattention today?",
+      "subtitle": "Start with a decision people already make.",
+      "part": 0,
+      "notes": "notes/garden-question.md",
+      "claim_type": "illustrative"
+    },
+    {
+      "id": "garden-framework",
+      "layout": "scene",
+      "title": "Observe. Decide. Act.",
+      "notes": "notes/garden-framework.md",
+      "claim_type": "illustrative",
+      "scene": {
+        "template": "framework-to-portfolio",
+        "overrides": {
+          "duration": 8,
+          "content": {
+            "title": "Three connected steps turn readings into action.",
+            "center": "Garden",
+            "parts": [
+              "Observe",
+              "Decide",
+              "Act"
+            ],
+            "papers": [
+              [
+                "Collect readings",
+                "Check the context"
+              ],
+              [
+                "Compare alternatives",
+                "Show uncertainty"
+              ],
+              [
+                "Suggest one action",
+                "Learn from feedback"
+              ]
+            ],
+            "awards": [
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ]
+            ],
+            "recognition": "An illustrative design framework — not a tested system"
+          }
+        }
+      }
+    },
+    {
+      "id": "garden-roadmap",
+      "layout": "roadmap",
+      "title": "A useful system connects observation and action",
+      "parts": [
+        {
+          "title": "Observe the right signals",
+          "papers": [
+            {
+              "title": "Soil & weather",
+              "detail": "Read measurements in their local context"
+            }
+          ]
+        },
+        {
+          "title": "Make the decision clear",
+          "papers": [
+            {
+              "title": "Priorities",
+              "detail": "Explain what needs attention and why"
+            }
+          ]
+        },
+        {
+          "title": "Keep people in control",
+          "papers": [
+            {
+              "title": "Feedback",
+              "detail": "Let gardeners confirm or revise the action"
+            }
+          ]
+        }
+      ],
+      "notes": "notes/garden-roadmap.md",
+      "claim_type": "illustrative"
+    },
+    {
+      "id": "garden-comparison",
+      "layout": "comparison",
+      "title": "A reading becomes useful when it explains a choice",
+      "columns": [
+        {
+          "title": "A number alone",
+          "body": [
+            "Bed A: 18% moisture",
+            "The next step is unclear."
+          ]
+        },
+        {
+          "title": "A decision with context",
+          "body": [
+            "Check Bed A first.",
+            "Compare the reading with the crop, soil, and recent rain."
+          ]
+        }
+      ],
+      "notes": "notes/garden-comparison.md",
+      "claim_type": "illustrative"
+    },
+    {
+      "id": "garden-uncertainty",
+      "layout": "bullets",
+      "title": "Make uncertainty part of the recommendation",
+      "body": [
+        "Show which observation supports the action.",
+        "Say when a reading needs a second look.",
+        "Ask before an action is hard to undo."
+      ],
+      "notes": "notes/garden-uncertainty.md",
+      "part": 1,
+      "claim_type": "illustrative"
+    },
+    {
+      "id": "garden-evaluation",
+      "layout": "impact",
+      "title": "Evaluate the decision, not just the prediction",
+      "columns": [
+        {
+          "title": "Usefulness",
+          "body": [
+            "Can people choose the next task?"
+          ]
+        },
+        {
+          "title": "Reliability",
+          "body": [
+            "Does the advice hold up when a sensor fails?"
+          ]
+        },
+        {
+          "title": "Control",
+          "body": [
+            "Can people correct a bad suggestion?"
+          ]
+        }
+      ],
+      "footer": "Proposed evaluation questions · No results are implied",
+      "notes": "notes/garden-evaluation.md",
+      "claim_type": "proposed"
+    },
+    {
+      "id": "garden-takeaway",
+      "layout": "takeaway",
+      "title": "Make the next action easier to understand",
+      "body": [
+        "Connect readings to a concrete decision.",
+        "Keep the reason and the uncertainty visible.",
+        "Let people shape what happens next."
+      ],
+      "notes": "notes/garden-takeaway.md",
+      "claim_type": "illustrative"
+    },
+    {
+      "id": "garden-thanks",
+      "layout": "acknowledgements",
+      "title": "Thank you",
+      "subtitle": "Build with the people who grow it.",
+      "body": [
+        "Gardeners · Community partners · Research collaborators"
+      ],
+      "notes": "notes/garden-thanks.md",
+      "claim_type": "illustrative"
+    }
+  ]
+}

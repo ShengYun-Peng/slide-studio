@@ -1,0 +1,1 @@
+The idea has three connected steps. First, observe what’s happening. Next, use those observations to make a decision clear. Then, let the gardener act and give feedback. The animation keeps those steps connected before opening them into the work inside each one.

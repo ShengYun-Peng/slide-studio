@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "kind": "before-after",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "duration": 8.5,
+  "theme": {
+    "schema_version": 1,
+    "name": "Anthony dark",
+    "background": "#2B2B2D",
+    "foreground": "#F6F6F4",
+    "muted": "#BAC1CC",
+    "panel": "#36383D",
+    "accents": [
+      "#7ABC73",
+      "#66A7FF",
+      "#FFB253"
+    ],
+    "font_regular": "HelveticaNeue",
+    "font_bold": "HelveticaNeue-Bold",
+    "title_size": 64,
+    "body_size": 44,
+    "label_size": 32,
+    "caption_size": 28,
+    "line_width": 6,
+    "canvas": [
+      1920,
+      1080
+    ],
+    "notes_size": 25
+  },
+  "content": {
+    "title": "Reveal the result in the same frame.",
+    "eyebrow": "LOCKED COMPARISON",
+    "before_label": "Image input",
+    "after_label": "Structured output",
+    "takeaway": "Same view. Same scale. A visible difference.",
+    "footnote": "Illustrative example · Replace with your evidence"
+  },
+  "timing": {
+    "reveal_start": 1.2,
+    "reveal_end": 4.5,
+    "settle_start": 5.3,
+    "settle_end": 6.5,
+    "caption_start": 6.5,
+    "caption_end": 7.4
+  },
+  "poster_time": 8.1,
+  "preview_times": [
+    0,
+    1.7,
+    3.4,
+    5.1,
+    6.8,
+    8.5
+  ],
+  "data_status": "illustrative",
+  "renderer": "runtime/renderers/presentation-patterns.swift"
+}

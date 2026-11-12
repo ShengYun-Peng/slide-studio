@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Slide Studio scene",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "width",
+    "height",
+    "fps",
+    "duration",
+    "content"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "kind": {
+      "enum": [
+        "framework-to-portfolio",
+        "branch-and-merge",
+        "learn-visual-vocabulary",
+        "masked-token-training",
+        "surface-build",
+        "surface-trajectories",
+        "video-budget",
+        "text-and-score",
+        "device-story",
+        "context-zoom",
+        "before-after",
+        "metric-focus",
+        "research-timeline",
+        "evidence-to-insight",
+        "cinematic-title-reveal"
+      ]
+    },
+    "width": {
+      "type": "integer",
+      "minimum": 320
+    },
+    "height": {
+      "type": "integer",
+      "minimum": 180
+    },
+    "fps": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 120
+    },
+    "duration": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 300
+    },
+    "theme": {
+      "type": "object"
+    },
+    "timing": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "content": {
+      "type": "object"
+    },
+    "timeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "at",
+          "reference"
+        ],
+        "properties": {
+          "at": {
+            "type": "number",
+            "minimum": 0
+          },
+          "reference": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

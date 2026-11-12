@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "id": "neutral",
+      "title": "Cinematic title \u2014 reusable original demo",
+      "config": "scenes/cinematic-title-reveal/scene.json",
+      "demo": "scenes/cinematic-title-reveal/demo/movie.mp4",
+      "poster": "scenes/cinematic-title-reveal/demo/poster.png",
+      "release_status": "original procedural scene; no external footage"
+    },
+    {
+      "id": "tesla-ai",
+      "title": "Tesla AI \u2014 defense-style local reference",
+      "config": "scenes/cinematic-title-reveal/tesla-scene.json",
+      "demo": "scenes/cinematic-title-reveal/tesla-demo/movie.mp4",
+      "poster": "scenes/cinematic-title-reveal/tesla-demo/poster.png",
+      "release_status": "contains Tesla logo and third-party footage; local review, redistribution unreviewed"
+    }
+  ]
+}

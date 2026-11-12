@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "kind": "video-budget",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "duration": 12,
+  "theme": {
+    "schema_version": 1,
+    "name": "Anthony dark",
+    "background": "#2B2B2D",
+    "foreground": "#F6F6F4",
+    "muted": "#BAC1CC",
+    "panel": "#36383D",
+    "accents": [
+      "#7ABC73",
+      "#66A7FF",
+      "#FFB253"
+    ],
+    "font_regular": "HelveticaNeue",
+    "font_bold": "HelveticaNeue-Bold",
+    "title_size": 64,
+    "body_size": 44,
+    "label_size": 32,
+    "caption_size": 28,
+    "line_width": 6,
+    "canvas": [
+      1920,
+      1080
+    ],
+    "notes_size": 25
+  },
+  "content": {
+    "title": "Spend inference compute on the right visual evidence.",
+    "frames_label": "Frames",
+    "frames_detail": "Temporal coverage",
+    "tokens_label": "Tokens",
+    "tokens_detail": "Visual detail",
+    "capacity_label": "Model capacity",
+    "cost_label": "Total inference cost = visual processing + language reasoning"
+  },
+  "timing": {},
+  "poster_time": 11.8,
+  "preview_times": [
+    0,
+    2.4,
+    4.8,
+    7.2,
+    9.6,
+    12
+  ],
+  "data_status": "conceptual"
+}

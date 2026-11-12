@@ -1,0 +1,12 @@
+[project]
+name = "slide-studio"
+version = "0.1.0"
+description = "An agent-readable local research presentation studio"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.slide-studio]
+entry = "studio.py"
+current-project = "my-project"
+native-platform = "macOS"
+python-dependencies = "stdlib only"

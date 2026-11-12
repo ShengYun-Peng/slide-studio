@@ -1,0 +1,36 @@
+{
+  "config_filename" : "resolved-scene.json",
+  "duration" : 8.5,
+  "fps" : 60,
+  "height" : 1080,
+  "kind" : "evidence-to-insight",
+  "notes" : "Presentation playback should start automatically within a slide; slide advance remains a separate setting.",
+  "outputs" : [
+    "poster.png",
+    "end.png",
+    "contact-sheet.png"
+  ],
+  "poster_time" : 8.0999999999999996,
+  "preview_times" : [
+    0,
+    1.7,
+    3.3999999999999999,
+    5.0999999999999996,
+    6.7999999999999998,
+    8.5
+  ],
+  "renderer" : "Slide Studio presentation patterns",
+  "schema_version" : 1,
+  "scientific_status" : "illustrative",
+  "video" : {
+    "codec" : "H.264",
+    "color_primaries" : "ITU-R BT.709",
+    "duration" : 8.5,
+    "filename" : "movie.mp4",
+    "fps" : 60,
+    "frames" : 510,
+    "silent" : true,
+    "transfer" : "sRGB on macOS 15+; BT.709 fallback"
+  },
+  "width" : 1920
+}

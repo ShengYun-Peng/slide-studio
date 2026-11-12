@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "kind": "device-story",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "duration": 16.5,
+  "theme": {
+    "schema_version": 1,
+    "name": "Anthony dark",
+    "background": "#2B2B2D",
+    "foreground": "#F6F6F4",
+    "muted": "#BAC1CC",
+    "panel": "#36383D",
+    "accents": [
+      "#7ABC73",
+      "#66A7FF",
+      "#FFB253"
+    ],
+    "font_regular": "HelveticaNeue",
+    "font_bold": "HelveticaNeue-Bold",
+    "title_size": 64,
+    "body_size": 44,
+    "label_size": 32,
+    "caption_size": 28,
+    "line_width": 6,
+    "canvas": [
+      1920,
+      1080
+    ],
+    "notes_size": 25
+  },
+  "content": {
+    "title": "Start with a familiar moment.",
+    "screen_heading": "Your ideas. In motion.",
+    "apps": [
+      "Write",
+      "Explore",
+      "Create"
+    ],
+    "app_title": "AI assistant",
+    "prompt": "Turn these notes into a clear 10-minute research talk.",
+    "status": "Building your first draft",
+    "screen_subtitle": "One place to think, create, and get things done.",
+    "chat_heading": "What would you like to make?",
+    "chat_subtitle": "Start with an idea. We’ll take it from there.",
+    "status_detail": "Finding the story. Connecting the ideas.",
+    "hardware_video": "../../assets/device/apple-pv-open-large-2x.mp4",
+    "screen_tracking": "../../assets/device/screen-tracking.json"
+  },
+  "timing": {
+    "open_start": 0.2,
+    "open_end": 1.95,
+    "zoom_start": 1.45,
+    "zoom_end": 3.15,
+    "cursor_start": 3.35,
+    "cursor_visible": 3.62,
+    "cursor_end": 5.85,
+    "collapse_start": 5.95,
+    "collapse_end": 6.55,
+    "app_start": 7.1,
+    "app_end": 7.8,
+    "typing_start": 7.95,
+    "typing_end": 10.75,
+    "send_cursor_start": 10.75,
+    "send_start": 11.15,
+    "send_end": 11.6,
+    "cursor_hide": 11.95,
+    "zoom_out_start": 13,
+    "zoom_out_end": 14.3,
+    "close_start": 13.95,
+    "close_end": 15.95,
+    "app_labels_out_start": 5.82,
+    "app_labels_out_end": 5.95,
+    "assistant_label_start": 6.55,
+    "assistant_label_end": 6.72,
+    "app_click_start": 6.78,
+    "desktop_out_start": 6.94,
+    "desktop_out_end": 7.1
+  },
+  "poster_time": 2.2,
+  "preview_times": [
+    0.85,
+    2.2,
+    4.8,
+    8.85,
+    12.4,
+    15.3
+  ],
+  "data_status": "conceptual",
+  "asset_status": "Includes Apple hardware source; redistribution review required"
+}

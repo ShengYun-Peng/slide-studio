@@ -1,0 +1,1 @@
+I’d like to thank the people who would help shape a project like this: gardeners, community partners, and research collaborators. This is the end of the sample talk. The content, colors, notes, and animation are all yours to replace.

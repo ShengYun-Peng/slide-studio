@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>Original procedural laptop shell</title><desc>Screen content slot is x260 y150 width920 height540. No third-party footage required.</desc>
+<path d="M245 135H1195V705H245Z" fill="#17191D" stroke="#A0A6B0" stroke-width="8"/>
+<path id="screen-content-slot" d="M260 150H1180V690H260Z" fill="#23272F"/>
+<path d="M245 705H1195L1300 790Q1305 810 1265 810H175Q140 810 140 790Z" fill="#7A8089"/>
+<path d="M155 790H1285" fill="none" stroke="#BEC3CB" stroke-width="5"/>
+<rect x="610" y="763" width="220" height="24" rx="5" fill="#9399A2"/>
+</svg>

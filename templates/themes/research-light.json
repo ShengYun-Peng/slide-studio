@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "name": "Research light",
+  "background": "#F7F7F4",
+  "foreground": "#202328",
+  "muted": "#555D66",
+  "panel": "#E8EBEF",
+  "accents": [
+    "#34692E",
+    "#235DA4",
+    "#995000"
+  ],
+  "font_regular": "HelveticaNeue",
+  "font_bold": "HelveticaNeue-Bold",
+  "title_size": 64,
+  "body_size": 44,
+  "label_size": 32,
+  "caption_size": 28,
+  "line_width": 6,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "notes_size": 25,
+  "usage": "Static layouts; review motion contrast separately before adopting."
+}

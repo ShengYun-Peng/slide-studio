@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "use": "Photographic hardware plate for device-story; generated UI and motion source are original/adaptable.",
+  "requires_asset_rights_review": true,
+  "redistribution_status": "Apple footage is not cleared for public redistribution. This local gallery demo includes a derivative composite.",
+  "source_url": "https://www.apple.com/105/media/us/macbook-pro/2025/785e1bc4-d1bd-4cf4-b1b3-94b9411c9e74/anim/pv-hero/large_2x.mp4",
+  "files": [
+    {
+      "path": "screen-tracking.json",
+      "sha256": "6b054a61c1e190a0fbca3d182a625b5561b346e8bfdda05217c75a5f97cbd07d"
+    },
+    {
+      "path": "apple-pv-open-large-2x.mp4",
+      "sha256": "0eeeceed42132ac92fe32c35eb5cff783baa1e7927839fc6dce852d8dc728e86"
+    }
+  ]
+}

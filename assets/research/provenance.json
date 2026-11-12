@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "path": "assets/research/toy-table.png",
+      "source": "Existing defense synthetic table teaching example",
+      "source_archive_label": "polish-v72/unitable-motion/training/assets/toy-table.png",
+      "sha256": "75fd5b4c071f2b2dc4c605b10da934ad0d8390a52c446e2663eaf75e4dfe9dea",
+      "status": "illustrative synthetic teaching example; not clinical data"
+    }
+  ],
+  "renderers": [
+    {
+      "path": "runtime/renderers/table-modules.swift",
+      "sha256": "b8d489adc2602bf725edae7c3f4aba660bcd5918561df1d09666c7f0cd62ea8a",
+      "scenes": [
+        "branch-and-merge"
+      ],
+      "historical_reference": {
+        "project_path": "assets/reference/recipes/branch-and-merge.swift.txt",
+        "source_archive_label": "defense_slides/_tmp/polish-v72/unitable-motion/modular/render.swift",
+        "source_sha256": "810eeac76b8f2f402f428425360ef601e838917dfd4cd20932181890bcc40521",
+        "packaged_reference_sha256": "810eeac76b8f2f402f428425360ef601e838917dfd4cd20932181890bcc40521",
+        "role": "optional local historical reference; not loaded at runtime",
+        "redistribution_status": "authorship_and_dependencies_to_review"
+      },
+      "adaptation": "Adapted the original modular sequence into a config-driven standalone renderer. Retains the location-to-crop-to-content dependency, real synthetic image crops, merged-cell annotations, word assembly, and exact-string label replacements. The source table is drawn procedurally.",
+      "runtime_assets": [],
+      "requires_defense_folder": false,
+      "data_status": "conceptual synthetic teaching example; not empirical evidence"
+    },
+    {
+      "path": "runtime/renderers/research-training.swift",
+      "sha256": "d150cfe7e4ae9fdf4a8d9ad2962a319aed0cace853eee9a0004d2182be36a884",
+      "scenes": [
+        "learn-visual-vocabulary",
+        "masked-token-training"
+      ],
+      "historical_reference": {
+        "project_path": "assets/reference/recipes/masked-token-training.swift.txt",
+        "source_archive_label": "defense_slides/_tmp/polish-v72/unitable-motion/training/render.swift",
+        "source_sha256": "9f0307b8340ef6834c5f4d46084f0e6e3b02e82cdc0d471f65b629d210afa885",
+        "packaged_reference_sha256": "9f0307b8340ef6834c5f4d46084f0e6e3b02e82cdc0d471f65b629d210afa885",
+        "role": "optional local historical reference; not loaded at runtime",
+        "redistribution_status": "authorship_and_dependencies_to_review"
+      },
+      "adaptation": "Adapted both training steps from the original shared source: reconstruction learns the visual vocabulary; a frozen tokenizer supplies targets for masked prediction by a trainable visual encoder. Added portable image lookup, configurable token arrays, exact-string label replacements, and reference-time anchors. Keeps fixed 4-by-3 token topology.",
+      "runtime_assets": [
+        "assets/research/toy-table.png"
+      ],
+      "requires_defense_folder": false,
+      "data_status": "conceptual synthetic teaching example; not empirical evidence"
+    },
+    {
+      "path": "runtime/renderers/video-budget.swift",
+      "sha256": "b22d941452240c6af364cf626da8d4ca3612ff8bbaee5103bad2eb108b95cb7d",
+      "scenes": [
+        "video-budget"
+      ],
+      "historical_reference": {
+        "project_path": "assets/reference/recipes/video-budget.swift.txt",
+        "source_archive_label": "defense_slides/_tmp/polish-v53/vlm/factor-motion/render.swift",
+        "source_sha256": "74c6eb76120f00052d40c370ad3bcc9cc34581ecbcfddae88b4b2ebf39cafb7d",
+        "packaged_reference_sha256": "74c6eb76120f00052d40c370ad3bcc9cc34581ecbcfddae88b4b2ebf39cafb7d",
+        "role": "optional local historical reference; not loaded at runtime",
+        "redistribution_status": "authorship_and_dependencies_to_review"
+      },
+      "adaptation": "Adapted the defense factor-motion sequence into a standalone renderer. Replaced original frame content with an original abstract procedural sequence and added configurable explanatory labels. Preserves the frames-to-encoder-to-tokens-to-language-model causal order. Fixed topology uses three cards and twenty visual tokens.",
+      "runtime_assets": [],
+      "requires_defense_folder": false,
+      "data_status": "conceptual synthetic teaching example; not empirical evidence"
+    }
+  ],
+  "runtime_note": "All runtime paths are project-relative. Historical source_archive_label values identify archived provenance only; they are not paths the renderers open. Optional assets/reference snapshots may be omitted from a public package without affecting these renderers."
+}

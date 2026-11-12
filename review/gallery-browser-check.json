@@ -1,0 +1,10 @@
+{
+  "cards": 16,
+  "methods": 5,
+  "tesla": [
+    "cinematic-title-reveal--tesla-ai"
+  ],
+  "dialogOpens": true,
+  "dialogCloses": true,
+  "horizontalOverflow": false
+}

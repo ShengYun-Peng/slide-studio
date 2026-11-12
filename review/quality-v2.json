@@ -1,0 +1,347 @@
+{
+  "checked_at": "2026-11-12T08:12:07.890287+00:00",
+  "patterns": 15,
+  "movies": 16,
+  "total_frames_decoded": 10620,
+  "total_duration_seconds": 177.0,
+  "all_pass": true,
+  "unit_tests": {
+    "passed": 16,
+    "skipped": 1,
+    "skip_reason": "Opt-in native Keynote test; original deck untouched"
+  },
+  "gallery_browser": {
+    "cards": 16,
+    "methods": 5,
+    "tesla": [
+      "cinematic-title-reveal--tesla-ai"
+    ],
+    "dialogOpens": true,
+    "dialogCloses": true,
+    "horizontalOverflow": false
+  },
+  "movies_detail": [
+    {
+      "scene": "framework-to-portfolio",
+      "variant": "demo",
+      "movie": "scenes/framework-to-portfolio/demo/movie.mp4",
+      "movie_sha256": "31cdff3c2def29462abdb1546bc8d0b68b51be92b3a76055e411cb409e0c7eea",
+      "renderer": "runtime/swift/main.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 9,
+        "actual_fps": 60.000003814697266,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 540,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "branch-and-merge",
+      "variant": "demo",
+      "movie": "scenes/branch-and-merge/demo/movie.mp4",
+      "movie_sha256": "213e4b909abd37bfb1f9ada4e49945560acc41d8be81aaf2de5f551af8352626",
+      "renderer": "runtime/renderers/table-modules.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 24,
+        "actual_fps": 60,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 1440,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "learn-visual-vocabulary",
+      "variant": "demo",
+      "movie": "scenes/learn-visual-vocabulary/demo/movie.mp4",
+      "movie_sha256": "5cbc3298fbe4074fa9caa911843a92a712b5657fc6e44799835fbbc651e6a723",
+      "renderer": "runtime/renderers/research-training.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 16,
+        "actual_fps": 60,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 960,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "masked-token-training",
+      "variant": "demo",
+      "movie": "scenes/masked-token-training/demo/movie.mp4",
+      "movie_sha256": "df595b51a7456cddaeec95648fbdb53cb695cc04b2e94b30d0bce44979cb2c9e",
+      "renderer": "runtime/renderers/research-training.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 16,
+        "actual_fps": 60,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 960,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "surface-build",
+      "variant": "demo",
+      "movie": "scenes/surface-build/demo/movie.mp4",
+      "movie_sha256": "dc75f32c72f83108481cabff33b588a2ba09a99f207b9e444b0849f5d77d3d7b",
+      "renderer": "runtime/swift/main.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 8,
+        "actual_fps": 60,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 480,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "surface-trajectories",
+      "variant": "demo",
+      "movie": "scenes/surface-trajectories/demo/movie.mp4",
+      "movie_sha256": "c0e7fc0945eb2d737c2a7f75a416bd20615f42b8548b20902924be1472f6583a",
+      "renderer": "runtime/swift/main.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 8,
+        "actual_fps": 60,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 480,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "video-budget",
+      "variant": "demo",
+      "movie": "scenes/video-budget/demo/movie.mp4",
+      "movie_sha256": "9375d607427ce4dcf6e525549c5189aedb30844f96c122f8dcf76652491d1e0d",
+      "renderer": "runtime/renderers/video-budget.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 12,
+        "actual_fps": 60,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 720,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "text-and-score",
+      "variant": "demo",
+      "movie": "scenes/text-and-score/demo/movie.mp4",
+      "movie_sha256": "64ef5f477aea01867c7ba62470c1e0ced81036f11778eaf60c9559c095b40a12",
+      "renderer": "runtime/swift/main.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 9,
+        "actual_fps": 60.000003814697266,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 540,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "device-story",
+      "variant": "demo",
+      "movie": "scenes/device-story/demo/movie.mp4",
+      "movie_sha256": "c61286898c6b5cbed2ba5ab3e9d7d9c5e56087a2fd98fc4889de7ebc797a8cad",
+      "renderer": "runtime/renderers/device-story.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 16.5,
+        "actual_fps": 60.000003814697266,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 990,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "context-zoom",
+      "variant": "demo",
+      "movie": "scenes/context-zoom/demo/movie.mp4",
+      "movie_sha256": "94484b82ae406d682b364613504ded41e8fc7f1a2fefb794f4ae3771ad30ed44",
+      "renderer": "runtime/renderers/presentation-patterns.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 8.5,
+        "actual_fps": 60,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 510,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "before-after",
+      "variant": "demo",
+      "movie": "scenes/before-after/demo/movie.mp4",
+      "movie_sha256": "5e2bb329c92914b346343e47871451b457c4d7239158110d506c66c77003d091",
+      "renderer": "runtime/renderers/presentation-patterns.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 8.5,
+        "actual_fps": 60.000003814697266,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 510,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "metric-focus",
+      "variant": "demo",
+      "movie": "scenes/metric-focus/demo/movie.mp4",
+      "movie_sha256": "d60b0444c342093422e0762fb096b5eacc7412b26da99ee91a385e102fe612eb",
+      "renderer": "runtime/renderers/presentation-patterns.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 8.5,
+        "actual_fps": 60.000003814697266,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 510,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "research-timeline",
+      "variant": "demo",
+      "movie": "scenes/research-timeline/demo/movie.mp4",
+      "movie_sha256": "d8641c1b04d767db5b95221f157e0891adfd0c59e5b69aa2f7f85b52d2be7b39",
+      "renderer": "runtime/renderers/presentation-patterns.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 8.5,
+        "actual_fps": 60.000003814697266,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 510,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "evidence-to-insight",
+      "variant": "demo",
+      "movie": "scenes/evidence-to-insight/demo/movie.mp4",
+      "movie_sha256": "1932ba123085d54d295b64fea07cfe52e7331e88cd76687f578b7c3816371191",
+      "renderer": "runtime/renderers/presentation-patterns.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 8.5,
+        "actual_fps": 60.000003814697266,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 510,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "cinematic-title-reveal",
+      "variant": "demo",
+      "movie": "scenes/cinematic-title-reveal/demo/movie.mp4",
+      "movie_sha256": "4cdc9a5e7268278582a01cc78b3b96d5639bcc9f9f5b752760722ffffc4c6078",
+      "renderer": "runtime/renderers/cinematic-title.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 8,
+        "actual_fps": 60,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 480,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    },
+    {
+      "scene": "cinematic-title-reveal",
+      "variant": "tesla-demo",
+      "movie": "scenes/cinematic-title-reveal/tesla-demo/movie.mp4",
+      "movie_sha256": "479eb1dadaa6c90b1c19c8bdd0c3110ba9db29d564612ae6212a5971f66dad34",
+      "renderer": "runtime/renderers/cinematic-title.swift",
+      "renderer_matches": true,
+      "config_matches": true,
+      "verification": {
+        "actual_duration": 8,
+        "actual_fps": 60,
+        "actual_height": 1080,
+        "actual_width": 1920,
+        "frames_decoded": 480,
+        "pass": true,
+        "reader_completed": true,
+        "sample_images_decoded": 4,
+        "timestamps_strictly_increasing": true
+      }
+    }
+  ],
+  "visual_review": "review/visual-review-v2.md",
+  "native_keynote_retested": false
+}

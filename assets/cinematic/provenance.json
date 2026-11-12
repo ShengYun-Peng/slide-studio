@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "neutral_demo": {
+    "background": "Original procedural studio light field",
+    "mark": "Original aperture mark from CoreGraphics arcs",
+    "title": "CoreText vector glyph paths from a system font; no font files bundled"
+  },
+  "reference_assets": [
+    {
+      "path": "assets/cinematic/tesla-reference/tesla-logo.pdf",
+      "sha256": "3d973228964af590595745fdbef3bcc5bd8f9b7721e370b98e98f763811ae85a",
+      "source": "Final defense red Tesla vector mark",
+      "copyright": "Tesla, Inc.",
+      "source_url": null,
+      "redistribution_status": "unreviewed; local reference variant only",
+      "required_by_neutral_demo": false
+    },
+    {
+      "path": "assets/cinematic/tesla-reference/cybercab-night.mp4",
+      "sha256": "c23644c4f9932fe7777a1544511a098cbb07a5495c1b5dfc65ba8b7917f58eba",
+      "source": "Selected stabilized 60 fps cyclic shots from the final defense footage",
+      "copyright": "Tesla, Inc.",
+      "source_url": "https://www.youtube.com/watch?v=grdt05okn3Q",
+      "redistribution_status": "unreviewed; local reference variant only",
+      "required_by_neutral_demo": false
+    }
+  ]
+}

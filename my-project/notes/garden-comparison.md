@@ -1,0 +1,1 @@
+Look at the two versions here. The left gives us a number, but it doesn’t tell us what to do. The right points to a next step and the context we should check. These are made-up examples; the point is the difference in what each version helps someone decide.

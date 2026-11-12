@@ -1,0 +1,36 @@
+{
+  "config_filename" : "resolved-scene.json",
+  "duration" : 16,
+  "fps" : 60,
+  "height" : 1080,
+  "kind" : "masked-token-training",
+  "notes" : "Presentation playback should start automatically within a slide; slide advance remains a separate setting.",
+  "outputs" : [
+    "poster.png",
+    "end.png",
+    "contact-sheet.png"
+  ],
+  "poster_time" : 15.699999999999999,
+  "preview_times" : [
+    0,
+    3.2000000000000002,
+    6.4000000000000004,
+    9.5999999999999996,
+    12.800000000000001,
+    16
+  ],
+  "renderer" : "Slide Studio Swift renderer",
+  "schema_version" : 1,
+  "scientific_status" : "conceptual",
+  "video" : {
+    "codec" : "H.264",
+    "color_primaries" : "ITU-R BT.709",
+    "duration" : 16,
+    "filename" : "movie.mp4",
+    "fps" : 60,
+    "frames" : 960,
+    "silent" : true,
+    "transfer" : "sRGB on macOS 15+; BT.709 fallback"
+  },
+  "width" : 1920
+}

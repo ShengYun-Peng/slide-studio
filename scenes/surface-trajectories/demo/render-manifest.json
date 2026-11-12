@@ -1,0 +1,36 @@
+{
+  "config_filename" : "resolved-scene.json",
+  "duration" : 8,
+  "fps" : 60,
+  "height" : 1080,
+  "kind" : "surface-trajectories",
+  "notes" : "Presentation playback should start automatically within a slide; slide advance remains a separate setting.",
+  "outputs" : [
+    "poster.png",
+    "end.png",
+    "contact-sheet.png"
+  ],
+  "poster_time" : 7.2000000000000002,
+  "preview_times" : [
+    0,
+    1.6000000000000001,
+    3.2000000000000002,
+    4.7999999999999998,
+    6.4000000000000004,
+    8
+  ],
+  "renderer" : "Slide Studio Swift renderer",
+  "schema_version" : 1,
+  "scientific_status" : "illustrative",
+  "video" : {
+    "codec" : "H.264",
+    "color_primaries" : "ITU-R BT.709",
+    "duration" : 8,
+    "filename" : "movie.mp4",
+    "fps" : 60,
+    "frames" : 480,
+    "silent" : true,
+    "transfer" : "sRGB on macOS 15+; BT.709 fallback"
+  },
+  "width" : 1920
+}

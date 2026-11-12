@@ -1,0 +1,1 @@
+Where do you start? A dashboard full of numbers may not help you choose. For this example, the goal is simple: help a gardener decide which bed to check first. That gives us a clear question to organize the whole talk around.

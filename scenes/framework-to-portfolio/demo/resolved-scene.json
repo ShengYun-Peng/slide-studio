@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "kind": "framework-to-portfolio",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "duration": 9,
+  "theme": {
+    "schema_version": 1,
+    "name": "Anthony dark",
+    "background": "#2B2B2D",
+    "foreground": "#F6F6F4",
+    "muted": "#BAC1CC",
+    "panel": "#36383D",
+    "accents": [
+      "#7ABC73",
+      "#66A7FF",
+      "#FFB253"
+    ],
+    "font_regular": "HelveticaNeue",
+    "font_bold": "HelveticaNeue-Bold",
+    "title_size": 64,
+    "body_size": 44,
+    "label_size": 32,
+    "caption_size": 28,
+    "line_width": 6,
+    "canvas": [
+      1920,
+      1080
+    ],
+    "notes_size": 25
+  },
+  "content": {
+    "title": "One framework. Three connected contributions.",
+    "center": "One mission",
+    "parts": [
+      "Align for safety",
+      "Design for reliability",
+      "Scale capability"
+    ],
+    "papers": [
+      [
+        "Measure the risk",
+        "Train with feedback"
+      ],
+      [
+        "Robust architecture",
+        "Structured inputs"
+      ],
+      [
+        "Learn from more data",
+        "Use compute wisely"
+      ]
+    ],
+    "recognition": "Oral talks · awards · open tools",
+    "awards": [
+      [
+        "oral",
+        ""
+      ],
+      [
+        "award",
+        ""
+      ],
+      [
+        "",
+        "open"
+      ]
+    ]
+  },
+  "timing": {
+    "spin_start": 0.72,
+    "spin_end": 2.88,
+    "spread_start": 2.7,
+    "spread_end": 4.95,
+    "labels_start": 4.32,
+    "labels_end": 5.4,
+    "papers_start": 5.4,
+    "awards_start": 7.56,
+    "awards_end": 8.46
+  },
+  "poster_time": 8.1,
+  "preview_times": [
+    0,
+    1.8,
+    3.6,
+    5.4,
+    7.2,
+    9
+  ],
+  "data_status": "conceptual"
+}

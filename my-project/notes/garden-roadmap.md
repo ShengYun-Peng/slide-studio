@@ -1,0 +1,1 @@
+Here’s the route through the idea. We begin with soil and weather readings. Then we look at how to explain a priority. Finally, we leave room for the gardener to correct the system. Each step has one job, and together they support a useful decision.

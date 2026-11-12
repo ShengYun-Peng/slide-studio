@@ -1,0 +1,4 @@
+interface:
+  display_name: "Slide Studio"
+  short_description: "Build research talks with reusable visual stories"
+  default_prompt: "Use $slide-studio to turn my topic and materials into a clear research presentation with spoken notes and reusable animations."

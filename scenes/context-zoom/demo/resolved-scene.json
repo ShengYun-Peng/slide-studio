@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "kind": "context-zoom",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "duration": 8.5,
+  "theme": {
+    "schema_version": 1,
+    "name": "Anthony dark",
+    "background": "#2B2B2D",
+    "foreground": "#F6F6F4",
+    "muted": "#BAC1CC",
+    "panel": "#36383D",
+    "accents": [
+      "#7ABC73",
+      "#66A7FF",
+      "#FFB253"
+    ],
+    "font_regular": "HelveticaNeue",
+    "font_bold": "HelveticaNeue-Bold",
+    "title_size": 64,
+    "body_size": 44,
+    "label_size": 32,
+    "caption_size": 28,
+    "line_width": 6,
+    "canvas": [
+      1920,
+      1080
+    ],
+    "notes_size": 25
+  },
+  "content": {
+    "title": "Show the detail without losing its context.",
+    "eyebrow": "CONTEXT → DETAIL",
+    "source_label": "Full document",
+    "detail_label": "Linked detail",
+    "takeaway_line1": "Keep the row, column,",
+    "takeaway_line2": "and source connected.",
+    "footnote": "Illustrative example · Replace with your evidence"
+  },
+  "timing": {
+    "focus_start": 1.0,
+    "focus_end": 2.0,
+    "zoom_start": 2.4,
+    "zoom_end": 4.6,
+    "caption_start": 5.4,
+    "caption_end": 6.4
+  },
+  "poster_time": 8.1,
+  "preview_times": [
+    0,
+    1.7,
+    3.4,
+    5.1,
+    6.8,
+    8.5
+  ],
+  "data_status": "illustrative",
+  "renderer": "runtime/renderers/presentation-patterns.swift"
+}

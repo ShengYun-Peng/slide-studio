@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="500" viewBox="0 0 720 500">
+<title>Symmetric connectors with exact endpoint alignment</title>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+<path d="M70 220C320 220 360 90 630 90m-25-13 25 13-25 13" stroke="#66A7FF"/>
+<path d="M70 250H630m-25-13 25 13-25 13" stroke="#FFB253"/>
+<path d="M70 280C320 280 360 410 630 410m-25-13 25 13-25 13" stroke="#7ABC73"/>
+</g></svg>

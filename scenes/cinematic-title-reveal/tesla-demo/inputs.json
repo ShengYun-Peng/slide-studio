@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "config_sha256": "44b27c32ad72b7830da41214797d02d4fbbf076375f210f894a8ed3f96992d1a",
+  "renderer": "runtime/renderers/cinematic-title.swift",
+  "renderer_sha256": "51d59b02044efb735259cc1e5e23de5aaa261d0e92798cfe8c2a4e132e15ba4f",
+  "asset_hashes": {
+    "../../assets/cinematic/tesla-reference/tesla-logo.pdf": "3d973228964af590595745fdbef3bcc5bd8f9b7721e370b98e98f763811ae85a",
+    "../../assets/cinematic/tesla-reference/cybercab-night.mp4": "c23644c4f9932fe7777a1544511a098cbb07a5495c1b5dfc65ba8b7917f58eba"
+  },
+  "environment": {
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "macos_native_rendering": true,
+    "swiftc": true,
+    "keynote_installed": true,
+    "pdftotext": false,
+    "no_api_key_required": true
+  }
+}

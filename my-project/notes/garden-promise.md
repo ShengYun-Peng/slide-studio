@@ -1,0 +1,1 @@
+Hi, I’m your presenter. By the end of this short example, you’ll see how a collection of sensor readings can become a decision someone can actually use. Let’s start with a familiar moment: you arrive at a garden, and several beds seem to need attention.

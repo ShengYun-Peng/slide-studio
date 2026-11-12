@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "description": "Content roles and review criteria for the supported slide layouts. Typography and color come from the selected theme; all dimensions are adaptable.",
+  "layouts": [
+    {
+      "id": "title",
+      "type": "title",
+      "title": "Talk opening",
+      "description": "A clear talk identity with a short supporting line and generous space.",
+      "use_when": [
+        "Opening a talk",
+        "Introducing a major new session"
+      ],
+      "content_roles": {
+        "eyebrow": "Optional short framing",
+        "title": "Talk title or central promise",
+        "subtitle": "Concise framing",
+        "presenter": "Speaker and occasion"
+      },
+      "reading_order": [
+        "eyebrow",
+        "title",
+        "subtitle",
+        "presenter"
+      ],
+      "review_checks": [
+        "Do not turn the title into a crowded abstract",
+        "Omit the opening page number by default",
+        "If a portrait is added, center the face within its crop"
+      ]
+    },
+    {
+      "id": "question",
+      "type": "question",
+      "title": "Transition question or navigation cue",
+      "description": "A short prominent question that opens a real gap, or a large topic cue for Q&A navigation.",
+      "use_when": [
+        "Bridging a finding to a new method",
+        "Opening a part",
+        "Creating a thumbnail-readable Q&A divider"
+      ],
+      "content_roles": {
+        "eyebrow": "Optional short context",
+        "title": "One short question or topic cue",
+        "subtitle": "Optional brief context",
+        "part": "Zero-based accent index"
+      },
+      "reading_order": [
+        "eyebrow",
+        "title",
+        "subtitle"
+      ],
+      "review_checks": [
+        "The preceding result motivates the question",
+        "The question does not simply repeat the next mission statement",
+        "Q&A cues remain readable as thumbnails"
+      ]
+    },
+    {
+      "id": "bullets",
+      "type": "bullets",
+      "title": "Focused explanation",
+      "description": "A takeaway title followed by a compact set of parallel statements.",
+      "use_when": [
+        "Defining an unfamiliar setting",
+        "Explaining a concise design principle",
+        "Presenting a short future direction"
+      ],
+      "content_roles": {
+        "title": "Claim or precise subject",
+        "subtitle": "Optional setting",
+        "body": "Parallel supporting statements"
+      },
+      "reading_order": [
+        "title",
+        "subtitle",
+        "body"
+      ],
+      "review_checks": [
+        "Each bullet adds a distinct point",
+        "Avoid nested small explanations",
+        "Use a visual layout when relationships matter more than the list"
+      ]
+    },
+    {
+      "id": "comparison",
+      "type": "comparison",
+      "title": "Aligned comparison",
+      "description": "Parallel columns make a meaningful difference easy to locate.",
+      "use_when": [
+        "Contrasting methods or settings",
+        "Showing an error and a corrected result",
+        "Comparing evidence under a controlled condition"
+      ],
+      "content_roles": {
+        "title": "What the comparison establishes",
+        "columns": "Named alternatives, each with its own short body",
+        "subtitle": "Optional shared comparison condition"
+      },
+      "reading_order": [
+        "title",
+        "subtitle",
+        "columns"
+      ],
+      "review_checks": [
+        "Column labels identify the comparison",
+        "Related images use comparable scale and aligned captions",
+        "Fixed-budget or other conditions are explicit"
+      ]
+    },
+    {
+      "id": "roadmap",
+      "type": "roadmap",
+      "title": "Parts and contributions",
+      "description": "Group work by purpose, with paper names and short descriptions under each part.",
+      "use_when": [
+        "Introducing the research structure",
+        "Returning to the roadmap at a part boundary",
+        "Presenting a concise publication overview"
+      ],
+      "content_roles": {
+        "title": "Talk mission or roadmap heading",
+        "parts": "Ordered parts with title and papers",
+        "parts[].papers[].title": "Short work name",
+        "parts[].papers[].detail": "Plain-language contribution"
+      },
+      "reading_order": [
+        "title",
+        "parts[].title",
+        "parts[].papers"
+      ],
+      "review_checks": [
+        "Part and paper hierarchy is obvious",
+        "One paper per row where practical",
+        "Active-part emphasis and line breaks remain consistent",
+        "Do not hardcode three parts if the new story needs a different structure"
+      ]
+    },
+    {
+      "id": "paper-cover",
+      "type": "paper-cover",
+      "title": "Research work introduction",
+      "description": "Introduce a work and its collaborators with a clean identity page.",
+      "use_when": [
+        "Beginning a paper segment",
+        "Introducing a substantial project within a longer talk"
+      ],
+      "content_roles": {
+        "title": "Short work name",
+        "subtitle": "Full publication or project title",
+        "authors": "Names and optional portrait images with normalized focal_x/focal_y crop coordinates",
+        "venue": "Venue, year, and concise recognition",
+        "part": "Zero-based accent index"
+      },
+      "reading_order": [
+        "title",
+        "subtitle",
+        "authors",
+        "venue"
+      ],
+      "review_checks": [
+        "Full title and venue are accurate",
+        "Headshot crops center faces, names center beneath them",
+        "Recognition does not collide with authors",
+        "Save the detailed research question for the following content",
+        "Face focal points are honored by native macOS PNG and Keynote output; SVG-only preview uses a centered fill crop"
+      ]
+    },
+    {
+      "id": "impact",
+      "type": "impact",
+      "title": "Contribution and impact synthesis",
+      "description": "Organize a small number of verified effects and outcomes with readable hierarchy.",
+      "use_when": [
+        "Summarizing scientific and practical contributions",
+        "Presenting adoption, recognition, or open-source evidence"
+      ],
+      "content_roles": {
+        "title": "Impact claim",
+        "columns": "Up to three grouped contributions or metrics",
+        "subtitle": "Optional concise scope",
+        "footer": "Optional source or reporting date"
+      },
+      "reading_order": [
+        "title",
+        "subtitle",
+        "columns",
+        "footer"
+      ],
+      "review_checks": [
+        "Each metric has a recoverable source",
+        "Adoption, citation, deployment, and recognition are not conflated",
+        "The page can be explained in the intended order",
+        "Shorter wording preserves large type"
+      ]
+    },
+    {
+      "id": "acknowledgements",
+      "type": "acknowledgements",
+      "title": "People and thanks",
+      "description": "Give people, collaborators, or shared memories the visual focus.",
+      "use_when": [
+        "Thanking a committee or collaborators",
+        "Showing a lab photo collage",
+        "Thanking internship or industry hosts"
+      ],
+      "content_roles": {
+        "title": "Warm concise acknowledgement",
+        "body": "Names or a short message when no images are supplied",
+        "images": "Up to four prepared photographs",
+        "subtitle": "Optional message when no images are supplied"
+      },
+      "reading_order": [
+        "title",
+        "images or subtitle",
+        "body"
+      ],
+      "review_checks": [
+        "Faces are not lost to crops",
+        "Names align with their photos",
+        "Prioritize photos instead of forcing all of them to fit",
+        "Personal thanks sound sincere and specific"
+      ]
+    },
+    {
+      "id": "scene",
+      "type": "scene",
+      "title": "Narrated visual process",
+      "description": "Bind a reusable rendered scene to a slide while preserving a clear title and narration.",
+      "use_when": [
+        "Explaining a continuous mechanism",
+        "Showing synchronized text and score",
+        "Revealing a framework or assembled output"
+      ],
+      "content_roles": {
+        "scene": "Template ID and content/timing overrides; labels are drawn by the scene",
+        "notes": "Spoken narration corresponding to scene events"
+      },
+      "reading_order": [
+        "scene"
+      ],
+      "review_checks": [
+        "The scene is scientifically appropriate for this content",
+        "Text remains legible inside the movie",
+        "Movie autoplay is separate from slide auto-advance",
+        "Start/end frames match adjacent slides",
+        "Production directions stay outside the spoken notes",
+        "Full-bleed scenes own their title; the base layout does not overlay title or page number"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "type": "takeaway",
+      "title": "Concise research takeaway",
+      "description": "A small set of complete contribution statements closes a work and prepares the next step.",
+      "use_when": [
+        "Closing a paper segment",
+        "Recapping a part",
+        "Restating the central contribution"
+      ],
+      "content_roles": {
+        "title": "Work-level conclusion",
+        "body": "Brief complete contribution or result bullets",
+        "subtitle": "Optional minimal scope"
+      },
+      "reading_order": [
+        "title",
+        "body",
+        "subtitle"
+      ],
+      "review_checks": [
+        "Bullets state the novelty rather than generic benefits",
+        "No small explanatory subline is required under each bullet",
+        "Claims remain supported by the source",
+        "Notes lead naturally to the next question"
+      ]
+    }
+  ],
+  "authoring_reference": "../../guides/authoring-contract.md"
+}

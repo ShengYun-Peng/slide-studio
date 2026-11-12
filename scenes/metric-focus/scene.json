@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "kind": "metric-focus",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "duration": 8.5,
+  "theme": {
+    "schema_version": 1,
+    "name": "Anthony dark",
+    "background": "#2B2B2D",
+    "foreground": "#F6F6F4",
+    "muted": "#BAC1CC",
+    "panel": "#36383D",
+    "accents": [
+      "#7ABC73",
+      "#66A7FF",
+      "#FFB253"
+    ],
+    "font_regular": "HelveticaNeue",
+    "font_bold": "HelveticaNeue-Bold",
+    "title_size": 64,
+    "body_size": 44,
+    "label_size": 32,
+    "caption_size": 28,
+    "line_width": 6,
+    "canvas": [
+      1920,
+      1080
+    ],
+    "notes_size": 25
+  },
+  "content": {
+    "title": "More safety, with capability intact.",
+    "eyebrow": "RESULT \u2192 TAKEAWAY",
+    "headers": [
+      "Method",
+      "Safety \u2191",
+      "Capability \u2191",
+      "Cost \u2193"
+    ],
+    "rows": [
+      [
+        "Baseline A",
+        "62.5",
+        "91.0",
+        "1.0\u00d7"
+      ],
+      [
+        "Baseline B",
+        "80.2",
+        "90.7",
+        "1.0\u00d7"
+      ],
+      [
+        "Baseline C",
+        "83.4",
+        "85.2",
+        "1.2\u00d7"
+      ],
+      [
+        "Proposed",
+        "94.6",
+        "90.9",
+        "0.68\u00d7"
+      ]
+    ],
+    "baseline_row": 1,
+    "focus_row": 3,
+    "metric": "+14.4",
+    "metric_label": "safety points",
+    "comparison_line1": "Comparable",
+    "comparison_line2": "capability",
+    "takeaway": "The highlighted rows carry the main comparison.",
+    "footnote": "Illustrative example \u00b7 Replace with your evidence"
+  },
+  "timing": {
+    "focus_start": 2.2,
+    "focus_end": 3.7,
+    "insight_start": 4.7,
+    "insight_end": 6.2,
+    "takeaway_start": 6.4,
+    "takeaway_end": 7.4
+  },
+  "poster_time": 8.1,
+  "preview_times": [
+    0,
+    1.7,
+    3.4,
+    5.1,
+    6.8,
+    8.5
+  ],
+  "data_status": "illustrative",
+  "renderer": "runtime/renderers/presentation-patterns.swift"
+}

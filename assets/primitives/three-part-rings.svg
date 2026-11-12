@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240">
+<title>Three semantic part icons</title><desc>Original editable vector primitives: safety shield, design tools, scale globe.</desc>
+<g transform="translate(120 120)" fill="none" stroke="#7ABC73" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"><circle r="78"/><path d="M-36-37 0-51 36-37 32 17 Q20 46 0 55 Q-24 44-32 17Z" fill="#7ABC73" stroke="none"/><path d="m-18 1 13 14L23-20" stroke="#2B2B2D"/></g>
+<g transform="translate(360 120)" fill="none" stroke="#66A7FF" stroke-width="12" stroke-linecap="round"><circle r="78"/><path d="m-33 34 67-68m-69 3 67 65" stroke-width="16"/><circle cx="34" cy="-34" r="16" fill="#66A7FF"/><circle cx="-35" cy="-31" r="16" fill="#66A7FF"/></g>
+<g transform="translate(600 120)" fill="none" stroke="#FFB253" stroke-width="10"><circle r="78"/><circle r="43"/><ellipse rx="19" ry="43" stroke-width="7"/><path d="M-41 0H41" stroke-width="7"/></g>
+</svg>

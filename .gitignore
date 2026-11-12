@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+build/
+output/
+.cache/
+# Local historical references need provenance/rights review before publication.
+# Neutral runnable scenes and their selected demo media do not depend on these.
+assets/reference/
+# Avoid committing private sources or a user's current presentation by accident.
+my-project/sources/*
+!my-project/sources/manifest.json
+my-project/derived/
+*.key.sb-*
+*.tmp

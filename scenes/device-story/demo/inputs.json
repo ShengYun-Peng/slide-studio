@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "config_sha256": "692ce98fe93836b97b26f2dc79a4e1e9d64ee62acdf7ba467465d35f71d9d76d",
+  "renderer": "runtime/renderers/device-story.swift",
+  "renderer_sha256": "df06457a58f364d68c19d5e5541947764d1528f27430fd64089b6d28637afa66",
+  "asset_hashes": {
+    "../../assets/device/apple-pv-open-large-2x.mp4": "0eeeceed42132ac92fe32c35eb5cff783baa1e7927839fc6dce852d8dc728e86",
+    "../../assets/device/screen-tracking.json": "6b054a61c1e190a0fbca3d182a625b5561b346e8bfdda05217c75a5f97cbd07d"
+  },
+  "environment": {
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "macos_native_rendering": true,
+    "swiftc": true,
+    "keynote_installed": true,
+    "pdftotext": false,
+    "no_api_key_required": true
+  }
+}

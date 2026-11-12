@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "kind": "masked-token-training",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "duration": 16,
+  "theme": {
+    "schema_version": 1,
+    "name": "Anthony dark",
+    "background": "#2B2B2D",
+    "foreground": "#F6F6F4",
+    "muted": "#BAC1CC",
+    "panel": "#36383D",
+    "accents": [
+      "#7ABC73",
+      "#66A7FF",
+      "#FFB253"
+    ],
+    "font_regular": "HelveticaNeue",
+    "font_bold": "HelveticaNeue-Bold",
+    "title_size": 64,
+    "body_size": 44,
+    "label_size": 32,
+    "caption_size": 28,
+    "line_width": 6,
+    "canvas": [
+      1920,
+      1080
+    ],
+    "notes_size": 25
+  },
+  "content": {
+    "title": "Learn context by predicting the missing tokens.",
+    "table_image": "../../assets/research/toy-table.png",
+    "labels": {
+      "Target token IDs": "Target visual tokens",
+      "Predicted token IDs": "Predicted visual tokens"
+    }
+  },
+  "timing": {},
+  "poster_time": 15.7,
+  "preview_times": [
+    0,
+    3.2,
+    6.4,
+    9.6,
+    12.8,
+    16
+  ],
+  "data_status": "conceptual",
+  "timeline": [
+    {
+      "at": 0,
+      "reference": 0
+    },
+    {
+      "at": 16,
+      "reference": 16
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "output": "templates/keynote/anthony-dark-template.key",
+  "document_id": "463705B3-004A-4B10-9151-1A04AE442D76",
+  "theme": {
+    "schema_version": 1,
+    "name": "Anthony dark",
+    "background": "#2B2B2D",
+    "foreground": "#F6F6F4",
+    "muted": "#BAC1CC",
+    "panel": "#36383D",
+    "accents": [
+      "#7ABC73",
+      "#66A7FF",
+      "#FFB253"
+    ],
+    "font_regular": "HelveticaNeue",
+    "font_bold": "HelveticaNeue-Bold",
+    "title_size": 64,
+    "body_size": 44,
+    "label_size": 32,
+    "caption_size": 28,
+    "line_width": 6,
+    "canvas": [
+      1920,
+      1080
+    ],
+    "notes_size": 25
+  },
+  "slides": {
+    "opening": {
+      "index": 1,
+      "native_text_count": 7,
+      "native_movie_count": 0,
+      "notes_size": "25.0",
+      "notes": "Hi, I’m your presenter. By the end of this talk, you’ll know what the new idea is, why it works, and where it can help. Let me start with a familiar problem."
+    },
+    "question": {
+      "index": 2,
+      "native_text_count": 7,
+      "native_movie_count": 0,
+      "notes_size": "25.0",
+      "notes": "We have seen what goes wrong. So the next question is simple: what would make this work in practice?"
+    },
+    "comparison": {
+      "index": 3,
+      "native_text_count": 10,
+      "native_movie_count": 0,
+      "notes_size": "25.0",
+      "notes": "Here is the main difference. On the left is the approach we started with. On the right is the idea we developed to address its key limitation."
+    },
+    "roadmap": {
+      "index": 4,
+      "native_text_count": 18,
+      "native_movie_count": 0,
+      "notes_size": "25.0",
+      "notes": "The talk has three connected parts. First, we understand the problem. Then we build a solution. Finally, we show what changes when people use it."
+    },
+    "paper-cover": {
+      "index": 5,
+      "native_text_count": 12,
+      "native_movie_count": 0,
+      "notes_size": "25.0",
+      "notes": "That question led to this work. I’ll start with the idea, then show the evidence."
+    },
+    "takeaway": {
+      "index": 6,
+      "native_text_count": 10,
+      "native_movie_count": 0,
+      "notes_size": "25.0",
+      "notes": "To wrap up this work, there are three things to remember. We found a pattern, built a method around it, and tested whether it helps in practice."
+    },
+    "impact": {
+      "index": 7,
+      "native_text_count": 14,
+      "native_movie_count": 0,
+      "notes_size": "25.0",
+      "notes": "The impact goes beyond a single result. This is where we can point to supported evidence of scientific progress, practical use, and community uptake."
+    },
+    "acknowledgements": {
+      "index": 8,
+      "native_text_count": 8,
+      "native_movie_count": 0,
+      "notes_size": "25.0",
+      "notes": "I’m grateful to everyone who made this work possible. Thank you for your advice, your collaboration, and your support."
+    }
+  }
+}

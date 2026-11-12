@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "origin": "original procedural artwork created for Slide Studio",
+  "external_assets": [],
+  "source": "runtime/renderers/presentation-patterns.swift",
+  "configurations": [
+    "scenes/context-zoom/scene.json",
+    "scenes/before-after/scene.json",
+    "scenes/metric-focus/scene.json",
+    "scenes/research-timeline/scene.json",
+    "scenes/evidence-to-insight/scene.json"
+  ],
+  "scientific_status": "illustrative",
+  "font": "Helvetica Neue, referenced from the host system; not redistributed"
+}

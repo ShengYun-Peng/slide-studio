@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "config_sha256": "cb78aad8351c243f09d612ab0ee903fb19e0dd376dd121ed9ce10ae67841720d",
+  "renderer": "runtime/swift/main.swift",
+  "renderer_sha256": "9d0ced3a014e6f677f32ae0b4e89b1c7b3f6aab89c3caa3a60a5276705363aae",
+  "asset_hashes": {},
+  "environment": {
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "macos_native_rendering": true,
+    "swiftc": true,
+    "keynote_installed": true,
+    "pdftotext": false,
+    "no_api_key_required": true
+  }
+}
