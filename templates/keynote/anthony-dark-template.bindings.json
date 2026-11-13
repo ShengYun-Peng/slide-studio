@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "output": "templates/keynote/anthony-dark-template.key",
-  "document_id": "463705B3-004A-4B10-9151-1A04AE442D76",
+  "document_id": "56733BAC-F3CA-4819-809F-F725A9137DFA",
   "theme": {
     "schema_version": 1,
     "name": "Anthony dark",
@@ -16,10 +16,11 @@
     ],
     "font_regular": "HelveticaNeue",
     "font_bold": "HelveticaNeue-Bold",
-    "title_size": 64,
-    "body_size": 44,
-    "label_size": 32,
-    "caption_size": 28,
+    "title_size": 72,
+    "body_size": 56,
+    "label_size": 50,
+    "caption_size": 50,
+    "min_readable_size": 50,
     "line_width": 6,
     "canvas": [
       1920,
@@ -44,7 +45,7 @@
     },
     "comparison": {
       "index": 3,
-      "native_text_count": 10,
+      "native_text_count": 11,
       "native_movie_count": 0,
       "notes_size": "25.0",
       "notes": "Here is the main difference. On the left is the approach we started with. On the right is the idea we developed to address its key limitation."
@@ -72,14 +73,14 @@
     },
     "impact": {
       "index": 7,
-      "native_text_count": 14,
+      "native_text_count": 16,
       "native_movie_count": 0,
       "notes_size": "25.0",
       "notes": "The impact goes beyond a single result. This is where we can point to supported evidence of scientific progress, practical use, and community uptake."
     },
     "acknowledgements": {
       "index": 8,
-      "native_text_count": 8,
+      "native_text_count": 9,
       "native_movie_count": 0,
       "notes_size": "25.0",
       "notes": "I’m grateful to everyone who made this work possible. Thank you for your advice, your collaboration, and your support."

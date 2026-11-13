@@ -14,9 +14,9 @@ Use motion to make a process, change, or dependency easier to understand. The re
 
 Use `python3 studio.py catalog` to inspect the available scene families. The demos are starting points: replace their labels, examples, timing, and geometry. Similar appearance does not make a demo scientifically suitable for the new work.
 
-The current gallery has **15 patterns plus the Tesla AI title variant**, with
-shipped configs at **1080p60**. See [the pattern guide](motion-patterns.md) for
-the six newer options and when each earns its place in a talk. The CLI selects
+The catalog includes **16 patterns plus the Tesla AI title variant**. Legacy demos
+ship at **1080p60**; the `interface-tour` demo uses **4K60** for readable UI zooms. See [the pattern guide](motion-patterns.md) for
+the seven newer options and when each earns its place in a talk. The CLI selects
 the renderer recorded in the catalog; several richer scenes now have specialized
 implementations rather than using the earlier simplified shared implementation.
 
@@ -104,6 +104,30 @@ Higher output fps does not create new source evidence. The photographic device
 uses a lower-rate source plate with registered interpolation between neighboring
 lid poses, while its drawn interface runs at output fps. Record this distinction
 instead of describing the entire composition as natively captured at 60 fps.
+
+## Interface captures: source detail and one camera
+
+For a tool walkthrough, use the [interface-tour scene](../scenes/interface-tour/USAGE.md). It composes lossless UI states, optional high-resolution detail layers, a cursor, and one camera. Keep actual selections and values; a composed walkthrough is not an uninterrupted screen recording. See [interactive talks](interactive-talks.md) for choosing the investigation.
+
+Set a fixed CSS viewport and record each capture's pixel dimensions, CSS origin, and device-pixel ratio (DPR). For zoomed interface reading, 3840×2160 at 60 fps is a useful delivery profile. It is not proof of sharpness: a 1080p source does not gain detail when encoded at 4K. Read the actual PNG/JPEG/movie dimensions rather than trusting a browser or screencast size request. Lossless PNG states and vector/source redraws are usually better than heavily enlarged JPEG screencasts for math and fine text.
+
+Estimate source adequacy at the tightest camera crop:
+
+`upsampling ratio = output viewport width in pixels / (camera crop width in CSS units × source DPR)`
+
+Aim for a ratio ≤1 in the region the audience must read. A detail overlay can provide additional density, but must use the same CSS geometry and same source state as the base. Keep the reading view inside the overlay's usable bounds, or inspect every exposed edge for seams, clipped formulas, or mismatched state. DPI metadata and a large Figma export are not evidence of more native detail if the frame contains a smaller raster.
+
+Use one owner for camera motion. Either record the interface's native pan/zoom, or keep native transforms fixed and apply the composed camera. Avoid simultaneously replaying a panel resize or wheel zoom under an opposing external zoom. A predictable starting point is a 2–3 second move with smooth monotonic easing, followed by a 3–6 second reading hold; tune to narration. Fewer purposeful moves usually explain more than rapid zoom reversals.
+
+For captured UI actions, timestamp the state when it is acquired, not just when an asynchronous callback finishes. Do not alternate lower-resolution moving JPEGs and sharper PNG states merely because a mouse event occurred. A deliberate state dissolve should finish before the next focus move.
+
+When dragging a component, keep the parent, moving card, and meaningful links visible together. A true alpha card layer keeps background dots stationary. Reuse the actual connector geometry and preserve foreground/background edge ordering; a single opaque card crop can hide links or carry a rectangle of background with it. Inspect the handoff from composited motion to the final native state: missing SVG layers or a connector disappearing at release is a visual defect even when DOM paths still exist.
+
+## Inspect boundaries and the actual embedded movie
+
+Sample the encoded output near action, source-change, camera-arrival, and final-hold boundaries. At 60 fps, a useful close check is two frames before, the boundary, and two frames after, plus a wider pacing view. Look for one-frame position jumps, camera reversals, source-resolution changes, clipping seams, and labels that appear before their cause. Static holds may have tiny codec differences; require stable geometry rather than byte-identical frames.
+
+Decode the final movie to verify dimensions, rate, frame count, monotonic presentation times, and duration. Then check native Keynote: the embedded bytes should match the selected source, the trim should include the full new duration, and the poster must be a useful stable frame. Inspect the actual slide with native title/page overlays. Follow [Keynote media](keynote-media.md) to replace a movie without rebuilding the deck. Movie autoplay, slide advance, and poster persistence are separate checks.
 
 ## Render and review economically
 

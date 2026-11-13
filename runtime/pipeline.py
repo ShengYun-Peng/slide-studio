@@ -1,5 +1,6 @@
 from __future__ import annotations
 import html
+import math
 import os
 import platform
 import shutil
@@ -34,6 +35,11 @@ def scene_config(scene_id,overrides=None,theme=None):
         if "poster_time" in config:config["poster_time"]*=ratio
         if "preview_times" in config:config["preview_times"]=[v*ratio for v in config["preview_times"]]
         if "timeline" in config:config["timeline"]=[dict(v,at=v["at"]*ratio) for v in config["timeline"]]
+        if config.get("kind")=="interface-tour":
+            for track in ("shots","camera","pointer","captions"):
+                for event in config.get("content",{}).get(track,[]):
+                    event["time"]*=ratio
+                    if "fade" in event:event["fade"]*=ratio
     result=merged(config,overrides)
     validate_scene_config(result)
     return result
@@ -56,6 +62,51 @@ def validate_scene_config(config):
         if anchors[0].get("at")!=0 or abs(anchors[-1].get("at",-1)-duration)>.001:raise ValueError("Timeline must begin at 0 and end at duration")
         for a,b in zip(anchors,anchors[1:]):
             if b["at"]<=a["at"] or b.get("reference",0)<a.get("reference",0):raise ValueError("Timeline anchors must advance in order")
+    if config.get("kind")=="interface-tour":validate_interface_tour(config)
+
+
+def validate_interface_tour(config):
+    """Protect deterministic camera/state interpolation before invoking Swift."""
+    def finite(value):return isinstance(value,(int,float)) and not isinstance(value,bool) and math.isfinite(value)
+    duration=config["duration"];content=config.get("content",{})
+    if not isinstance(content,dict):raise ValueError("Interface content must be an object")
+    w,h,fps=(config.get(k) for k in ("width","height","fps"))
+    if any(not isinstance(v,int) or isinstance(v,bool) or v<=0 for v in (w,h,fps)) or fps>120:
+        raise ValueError("Interface tour needs positive integer width, height and fps (1..120)")
+    if w%2 or h%2 or abs(w/h-16/9)>.001:raise ValueError("Interface tour uses even-sized 16:9 output and 1920×1080 logical geometry")
+    viewport=content.get("viewport",[96,238,1728,720])
+    if not isinstance(viewport,list) or len(viewport)!=4 or not all(finite(v) for v in viewport) or min(viewport[2:])<=0:
+        raise ValueError("Interface viewport must be [x,y,positive width,positive height]")
+    if min(viewport[:2])<0 or viewport[0]+viewport[2]>1920 or viewport[1]+viewport[3]>1080:
+        raise ValueError("Interface viewport must fit the 1920×1080 logical slide")
+    assets=content.get("assets",{})
+    if not isinstance(assets,dict) or not assets:raise ValueError("Interface tour needs named lossless state assets")
+    def asset(value):
+        if not isinstance(value,dict):raise ValueError("Each interface asset must be an object")
+        r=value.get("rect",[])
+        if not isinstance(value.get("file"),str) or not value["file"] or not isinstance(r,list) or len(r)!=4 or not all(finite(v) for v in r) or min(r[2:])<=0:
+            raise ValueError("Each interface asset needs file and [x,y,positive width,positive height]")
+        if not isinstance(value.get("layers",[]),list):raise ValueError("Interface detail layers must be an array")
+        for layer in value.get("layers",[]):asset(layer)
+    for value in assets.values():asset(value)
+    for name in ("shots","camera","pointer","captions"):
+        events=content.get(name,[])
+        if not isinstance(events,list) or not all(isinstance(event,dict) for event in events):
+            raise ValueError(f"Interface {name} must be an array of event objects")
+        if name in ("shots","camera") and (not events or events[0].get("time")!=0):
+            raise ValueError(f"Interface {name} must begin at 0")
+        previous=-1
+        for event in events:
+            t=event.get("time")
+            if not finite(t) or not previous<t<=duration:raise ValueError(f"Interface {name} times must increase inside 0..duration")
+            previous=t
+            if "fade" in event and (not finite(event["fade"]) or event["fade"]<0 or t+event["fade"]>duration):
+                raise ValueError(f"Interface {name} fade must finish inside the scene")
+            if name=="shots" and event.get("asset") not in assets:raise ValueError("Interface shot refers to an unknown asset")
+            if name in ("camera","pointer") and not all(finite(event.get(k)) for k in ("x","y")):
+                raise ValueError(f"Interface {name} needs finite x/y coordinates")
+            if name=="camera" and (not finite(event.get("w")) or event["w"]<=0):raise ValueError("Interface camera width must be positive")
+            if name=="captions" and not isinstance(event.get("text"),str):raise ValueError("Interface caption needs text")
 
 
 def resolve_scene_assets(config,base,template_base=None,overrides=None):
@@ -73,6 +124,28 @@ def resolve_scene_assets(config,base,template_base=None,overrides=None):
         if not path.is_file():raise FileNotFoundError(path)
         result=merged(result,{"content":{key:str(path)}})
         hashes[image]=digest(path)
+    # A captured interface is a set of full states plus high-DPR detail layers.
+    # Resolve each overridden file independently, so changing a camera or one
+    # layer does not accidentally relocate every inherited bundled asset.
+    def resolve_asset(value,override):
+        result=merged(value,{})
+        reference=value["file"]
+        origin=Path(template_base if template_base and "file" not in override else base).resolve()
+        path=(origin/reference).resolve();allowed=ROOT if origin.is_relative_to(ROOT) else origin
+        if not path.is_relative_to(allowed):raise ValueError(f"Scene asset escapes its portable root: {reference}")
+        if not path.is_file():raise FileNotFoundError(path)
+        result["file"]=str(path)
+        # Include the namespace to distinguish same-named assets in two roots.
+        key=f"{'template' if template_base and 'file' not in override else 'project'}:{reference}"
+        hashes[key]=digest(path)
+        if "layers" in value:
+            layer_overrides=override.get("layers")
+            result["layers"]=[resolve_asset(layer,layer if layer_overrides is not None else {}) for layer in value["layers"]]
+        return result
+    if config.get("kind")=="interface-tour":
+        overrides_assets=(overrides or {}).get("content",{}).get("assets",{})
+        result["content"]=dict(result["content"])
+        result["content"]["assets"]={name:resolve_asset(asset,overrides_assets.get(name,{})) for name,asset in config["content"]["assets"].items()}
     return result,hashes
 
 

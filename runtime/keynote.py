@@ -200,12 +200,14 @@ def _add_text(code, item, theme, directory, stem):
             continue
         p = _write(Path(directory) / f'{stem}-{index}.txt',line)
         code += [f'set txText to {_read_expr(p)}']
+        # Check left-aligned lines too: Keynote can silently wrap them and grow
+        # a text box over the next object, invalidating the manifest's geometry.
+        measured = _measure_text(line,font,size)+12
+        if measured > w+1:
+            raise ValueError(f'Text needs an explicit line break or wider box: {line!r} ({measured:.0f}pt > {w:.0f}pt)')
         if align != 'left':
             # Native text boxes have 5pt insets. Position each native line using
             # AppKit font metrics instead of rasterizing centered titles.
-            measured = _measure_text(line,font,size)+12
-            if measured > w+1:
-                raise ValueError(f'Centered/right text needs an explicit line break or wider box: {line!r} ({measured:.0f}pt > {w:.0f}pt)')
             code += [f'set measuredW to {_n(measured)}']
             if align == 'center':
                 code += [f'set txX to {_n(x)} + ({_n(w)} - measuredW) / 2']

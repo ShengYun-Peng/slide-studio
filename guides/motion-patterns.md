@@ -2,21 +2,36 @@
 
 Choose the audience's reading task first. Motion is useful when it preserves
 context, guides a comparison, shows a dependency, or gives a chapter transition
-a clear rhythm. The gallery has 15 runnable patterns and a Tesla AI variant of
-the cinematic title. This guide covers the six additions to the original nine.
+a clear rhythm. The gallery has 16 runnable patterns and a Tesla AI variant of
+the cinematic title. This guide covers seven additions to the original nine.
 
-The shipped examples are 1920 × 1080 at 60 fps. Their numerical examples are
+The legacy examples are 1920 × 1080 at 60 fps; the interface tour is 3840 × 2160
+at 60 fps with high-density source states. Their numerical examples are
 illustrative unless replaced with properly sourced data. Use each pattern's
 `USAGE.md` for the actual supported fields and renderer limits.
 
 | Audience needs to… | Choose | Main effect |
 |---|---|---|
+| Understand what an interactive tool lets someone do | [Interface tour](../scenes/interface-tour/USAGE.md) | One visible action changes a real state; one camera focuses the result and holds for reading |
 | Find a small piece of evidence inside a larger source | [Context → linked detail](../scenes/context-zoom/USAGE.md) | A marked region lifts into a linked enlargement while the source stays visible |
 | Judge a change at the same viewpoint | [Before → after](../scenes/before-after/USAGE.md) | A controlled reveal exposes two registered layers |
 | Read the important comparison in a dense table | [Metric focus](../scenes/metric-focus/USAGE.md) | Baseline and method remain prominent while unrelated rows recede |
 | Understand how a research program developed | [Research timeline](../scenes/research-timeline/USAGE.md) | A path reaches milestones and their small visual artifacts in sequence |
 | See the result before hearing its interpretation | [Evidence → insight](../scenes/evidence-to-insight/USAGE.md) | Curves trace first, then a focused region and delta support the conclusion |
 | Recognize a new chapter or closing promise | [Cinematic title](../scenes/cinematic-title-reveal/USAGE.md) | Light catches glyph edges before a clean title and mark settle |
+
+## Interface tour
+
+Choose a representative question and carry it through the actual interface.
+Establish the overview, show one action, reveal the changed result, then pause
+on readable evidence. Use one camera and settled, lossless states with matching
+source coordinates. A 4K output does not recover detail from a small screenshot.
+
+The bundled original interface is a neutral adaptation example with illustrative
+values. Replace its states with your tool's real outputs. See
+[interactive talks](interactive-talks.md) for the story, and the scene's
+[configuration contract](../scenes/interface-tour/README.md) for capture density,
+detail crops, click timing, camera keys, and encoded-frame checks.
 
 ## Context → linked detail
 

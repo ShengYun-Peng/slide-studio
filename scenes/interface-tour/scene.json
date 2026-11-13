@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "kind": "interface-tour",
+  "width": 3840,
+  "height": 2160,
+  "fps": 60,
+  "duration": 12,
+  "theme": {
+    "schema_version": 1,
+    "name": "Anthony dark",
+    "background": "#2B2B2D",
+    "foreground": "#F6F6F4",
+    "muted": "#BAC1CC",
+    "panel": "#36383D",
+    "accents": [
+      "#7ABC73",
+      "#66A7FF",
+      "#FFB253"
+    ],
+    "font_regular": "HelveticaNeue",
+    "font_bold": "HelveticaNeue-Bold",
+    "title_size": 72,
+    "body_size": 56,
+    "label_size": 50,
+    "caption_size": 50,
+    "min_readable_size": 50,
+    "line_width": 6,
+    "canvas": [
+      1920,
+      1080
+    ],
+    "notes_size": 25
+  },
+  "data_status": "illustrative",
+  "poster_time": 11.5,
+  "preview_times": [
+    0,
+    3,
+    4.5,
+    6.5,
+    8.5,
+    11.5
+  ],
+  "content": {
+    "title": "Let the audience follow one interaction",
+    "title_size": 72,
+    "caption_size": 56,
+    "viewport": [
+      96,
+      238,
+      1728,
+      720
+    ],
+    "assets": {
+      "overview": {
+        "file": "overview.png",
+        "rect": [
+          0,
+          0,
+          1200,
+          500
+        ]
+      },
+      "selected": {
+        "file": "selected.png",
+        "rect": [
+          0,
+          0,
+          1200,
+          500
+        ],
+        "layers": [
+          {
+            "file": "selected-detail.png",
+            "rect": [
+              650,
+              60,
+              540,
+              270
+            ]
+          }
+        ]
+      }
+    },
+    "shots": [
+      {
+        "time": 0,
+        "asset": "overview",
+        "fade": 0
+      },
+      {
+        "time": 4,
+        "asset": "selected",
+        "fade": 0.6
+      }
+    ],
+    "camera": [
+      {
+        "time": 0,
+        "x": 0,
+        "y": 0,
+        "w": 1200
+      },
+      {
+        "time": 5,
+        "x": 0,
+        "y": 0,
+        "w": 1200
+      },
+      {
+        "time": 8,
+        "x": 650,
+        "y": 95,
+        "w": 540
+      },
+      {
+        "time": 12,
+        "x": 650,
+        "y": 95,
+        "w": 540
+      }
+    ],
+    "pointer": [
+      {
+        "time": 0,
+        "x": 900,
+        "y": 420,
+        "visible": false
+      },
+      {
+        "time": 2,
+        "x": 720,
+        "y": 390,
+        "visible": true
+      },
+      {
+        "time": 3.7,
+        "x": 563,
+        "y": 220
+      },
+      {
+        "time": 3.9,
+        "x": 563,
+        "y": 220,
+        "down": true
+      },
+      {
+        "time": 4.1,
+        "x": 563,
+        "y": 220,
+        "down": false
+      },
+      {
+        "time": 5,
+        "x": 563,
+        "y": 220,
+        "visible": false
+      }
+    ],
+    "captions": [
+      {
+        "time": 0,
+        "text": "Select a checkpoint to inspect its result."
+      },
+      {
+        "time": 8,
+        "text": "Zoom in. Pause where the result can be read.",
+        "color": "#80B9F8"
+      }
+    ]
+  }
+}

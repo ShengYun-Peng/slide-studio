@@ -53,7 +53,7 @@ An `items` array appends native objects to the layout. Use it for simple diagram
   "y": 280,
   "w": 800,
   "h": 90,
-  "size": 44,
+  "size": 56,
   "font": "HelveticaNeue",
   "color": "#F6F6F4",
   "bold": false,
@@ -66,6 +66,8 @@ Other supported primitive types are `rect`, `ellipse`, `line`, and `image`. Shap
 In native Keynote, text is editable text. Shapes/connectors are separate PNG primitives that can be moved and resized; their vector geometry is edited through source manifests and regenerated. A movie is a native movie object, not a collection of editable slide shapes.
 
 Because items are appended, they do not erase the layout's built-in objects. Inspect the resulting manifest and preview if constructing a substantially custom page. The scene layout has no built-in title or page number, which avoids duplicating labels over a full-screen movie.
+
+Theme `min_readable_size` controls warnings for audience-read text; the Anthony dark profile uses 50 logical units. Custom text items keep their explicit size so validation can expose undersized content rather than silently enlarge it into an overlap. `reading_role` defaults to `primary`; `page-number` and `reference` are reserved exemptions for navigation and nonessential source citations. Never use these roles to hide a small result, label, or explanation from the check. Raster text and movie labels still need visual review.
 
 ## Scene configuration
 

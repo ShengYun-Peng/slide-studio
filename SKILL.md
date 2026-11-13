@@ -13,9 +13,11 @@ The bundled style is a starting profile, not a requirement to make every talk re
 
 - New topic or mixed materials: [workflow](guides/workflow.md), then [input materials](guides/input-materials.md).
 - Layout or figure revision: [visual design](guides/visual-design.md).
+- Interactive tool or visualization-system talk: [interactive talks](guides/interactive-talks.md), then the `interface-tour` scene.
 - Speaker script: [spoken notes](guides/spoken-notes.md).
 - Diagram-to-video or movie timing: [motion](guides/motion.md).
 - Existing manually edited deck: [review and adaptation](guides/review-adaptation.md) before changing it.
+- Replace embedded Keynote movies while preserving the deck: [native media workflow](guides/keynote-media.md).
 - Recurring failure or design judgment: search [lessons learned](guides/lessons-learned.md) by symptom rather than loading the entire reference every time.
 
 ## Essential constraints

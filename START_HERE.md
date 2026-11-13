@@ -64,6 +64,8 @@ Replace the source path with a real local file and pass `--project my-next-talk`
 | Existing Keynote or PowerPoint | Inventory the current deck and manual edits before adapting | [Review and adaptation](guides/review-adaptation.md) |
 | Figma assets | Capture source identifiers plus local exports; preserve meaning and editability where available | [Input materials](guides/input-materials.md) |
 | Animation request | Pick a demo family, replace content, then tune timing to narration | [Motion](guides/motion.md) |
+| Interactive research tool | Follow one real example through linked views and visible interactions | [Interactive talks](guides/interactive-talks.md) |
+| Existing movie needs replacement | Preserve native objects, replace media in a review copy, and verify playback settings | [Keynote media](guides/keynote-media.md) |
 | Script revision | Read adjacent slides and introduce the visible evidence before the conclusion | [Spoken notes](guides/spoken-notes.md) |
 
 ## The repeatable loop

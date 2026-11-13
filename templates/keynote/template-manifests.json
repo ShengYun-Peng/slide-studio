@@ -11,12 +11,13 @@
         "x": 106,
         "y": 158,
         "w": 1690,
-        "h": 48.6,
-        "size": 30,
+        "h": 73.0,
+        "size": 50,
         "font": "HelveticaNeue-Bold",
         "color": "#7ABC73",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -24,12 +25,13 @@
         "x": 104,
         "y": 280,
         "w": 1680,
-        "h": 265.76,
-        "size": 104,
+        "h": 297.48,
+        "size": 117.0,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -37,12 +39,13 @@
         "x": 110,
         "y": 668,
         "w": 1660,
-        "h": 65.68,
-        "size": 44,
+        "h": 80.32,
+        "size": 56.0,
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -50,12 +53,13 @@
         "x": 110,
         "y": 877,
         "w": 1660,
-        "h": 53.48,
-        "size": 34,
+        "h": 76.8064,
+        "size": 53.12,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       }
     ],
     "notes": "Hi, I’m your presenter. By the end of this talk, you’ll know what the new idea is, why it works, and where it can help. Let me start with a familiar problem."
@@ -72,12 +76,13 @@
         "x": 106,
         "y": 130,
         "w": 1700,
-        "h": 48.6,
-        "size": 30,
+        "h": 73.0,
+        "size": 50,
         "font": "HelveticaNeue-Bold",
         "color": "#7ABC73",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -85,12 +90,13 @@
         "x": 104,
         "y": 330,
         "w": 1690,
-        "h": 256.0,
-        "size": 100,
+        "h": 286.5,
+        "size": 112.5,
         "font": "HelveticaNeue-Bold",
         "color": "#7ABC73",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -98,12 +104,13 @@
         "x": 110,
         "y": 748,
         "w": 1660,
-        "h": 60.8,
-        "size": 40,
+        "h": 74.11019999999999,
+        "size": 50.91,
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -116,7 +123,8 @@
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "right"
+        "align": "right",
+        "reading_role": "page-number"
       }
     ],
     "notes": "We have seen what goes wrong. So the next question is simple: what would make this work in practice?"
@@ -133,12 +141,13 @@
         "x": 104,
         "y": 78,
         "w": 1712,
-        "h": 90.08,
-        "size": 64,
+        "h": 99.84,
+        "size": 72.0,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "rect",
@@ -155,38 +164,13 @@
         "x": 146,
         "y": 312,
         "w": 748,
-        "h": 75.44,
-        "size": 52,
+        "h": 92.73960000000001,
+        "size": 66.18,
         "font": "HelveticaNeue-Bold",
         "color": "#7ABC73",
         "bold": true,
-        "align": "left"
-      },
-      {
-        "type": "text",
-        "text": "State the limitation clearly.",
-        "x": 146,
-        "y": 422,
-        "w": 748,
-        "h": 63.24,
-        "size": 42,
-        "font": "HelveticaNeue",
-        "color": "#F6F6F4",
-        "bold": false,
-        "align": "left"
-      },
-      {
-        "type": "text",
-        "text": "Use the same visual scale.",
-        "x": 146,
-        "y": 520.24,
-        "w": 748,
-        "h": 63.24,
-        "size": 42,
-        "font": "HelveticaNeue",
-        "color": "#F6F6F4",
-        "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "rect",
@@ -203,38 +187,69 @@
         "x": 1026,
         "y": 312,
         "w": 748,
-        "h": 75.44,
-        "size": 52,
+        "h": 92.73960000000001,
+        "size": 66.18,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
+      },
+      {
+        "type": "text",
+        "text": "State the limitation clearly.",
+        "x": 146,
+        "y": 432.7396,
+        "w": 748,
+        "h": 77.209,
+        "size": 53.45,
+        "font": "HelveticaNeue",
+        "color": "#F6F6F4",
+        "bold": false,
+        "align": "left",
+        "reading_role": "primary"
+      },
+      {
+        "type": "text",
+        "text": "Use the same visual scale.",
+        "x": 146,
+        "y": 544.9485999999999,
+        "w": 748,
+        "h": 77.209,
+        "size": 53.45,
+        "font": "HelveticaNeue",
+        "color": "#F6F6F4",
+        "bold": false,
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Name the new idea.",
         "x": 1026,
-        "y": 422,
+        "y": 432.7396,
         "w": 748,
-        "h": 63.24,
-        "size": 42,
+        "h": 77.209,
+        "size": 53.45,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
-        "text": "Highlight the result that matters.",
+        "text": "Highlight the result that\nmatters.",
         "x": 1026,
-        "y": 520.24,
+        "y": 544.9485999999999,
         "w": 748,
-        "h": 63.24,
-        "size": 42,
+        "h": 142.418,
+        "size": 53.45,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -247,7 +262,8 @@
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "right"
+        "align": "right",
+        "reading_role": "page-number"
       }
     ],
     "notes": "Here is the main difference. On the left is the approach we started with. On the right is the idea we developed to address its key limitation."
@@ -264,17 +280,18 @@
         "x": 104,
         "y": 78,
         "w": 1712,
-        "h": 90.08,
-        "size": 64,
+        "h": 99.84,
+        "size": 72.0,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "ellipse",
         "x": 110,
-        "y": 242,
+        "y": 230,
         "w": 78,
         "h": 78,
         "fill": "#2B2B2D",
@@ -285,84 +302,90 @@
         "type": "text",
         "text": "1",
         "x": 110,
-        "y": 250,
+        "y": 238,
         "w": 78,
-        "h": 63.24,
-        "size": 42,
+        "h": 77.209,
+        "size": 53.45,
         "font": "HelveticaNeue-Bold",
         "color": "#7ABC73",
         "bold": true,
-        "align": "center"
+        "align": "center",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Understand the problem",
         "x": 220,
-        "y": 238,
+        "y": 226,
         "w": 1540,
-        "h": 87.64,
-        "size": 62,
+        "h": 97.095,
+        "size": 69.75,
         "font": "HelveticaNeue-Bold",
         "color": "#7ABC73",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
-        "text": "Discover the pattern",
+        "text": "Discover a pattern",
         "x": 266,
-        "y": 330,
+        "y": 323.095,
         "w": 565,
-        "h": 63.24,
-        "size": 42,
+        "h": 65.209,
+        "size": 53.45,
         "font": "HelveticaNeue",
         "color": "#7ABC73",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
-        "text": "Measure a phenomenon people missed.",
+        "text": "Measure an overlooked phenomenon.",
         "x": 864,
-        "y": 333,
+        "y": 323.095,
         "w": 930,
-        "h": 58.36,
-        "size": 38,
+        "h": 61.0,
+        "size": 50,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Define the challenge",
         "x": 266,
-        "y": 386,
+        "y": 388.30400000000003,
         "w": 565,
-        "h": 63.24,
-        "size": 42,
+        "h": 65.209,
+        "size": 53.45,
         "font": "HelveticaNeue",
         "color": "#7ABC73",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
-        "text": "Turn the observation into a clear question.",
+        "text": "Ask a precise research question.",
         "x": 864,
-        "y": 389,
+        "y": 388.30400000000003,
         "w": 930,
-        "h": 58.36,
-        "size": 38,
+        "h": 61.0,
+        "size": 50,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "ellipse",
         "x": 110,
-        "y": 531.6875,
+        "y": 477.51300000000003,
         "w": 78,
         "h": 78,
         "fill": "#2B2B2D",
@@ -373,58 +396,62 @@
         "type": "text",
         "text": "2",
         "x": 110,
-        "y": 539.6875,
+        "y": 485.51300000000003,
         "w": 78,
-        "h": 63.24,
-        "size": 42,
+        "h": 77.209,
+        "size": 53.45,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "center"
+        "align": "center",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Build the solution",
         "x": 220,
-        "y": 527.6875,
+        "y": 473.51300000000003,
         "w": 1540,
-        "h": 87.64,
-        "size": 62,
+        "h": 97.095,
+        "size": 69.75,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Develop the method",
         "x": 266,
-        "y": 619.6875,
+        "y": 570.6080000000001,
         "w": 565,
-        "h": 63.24,
-        "size": 42,
+        "h": 65.209,
+        "size": 53.45,
         "font": "HelveticaNeue",
         "color": "#66A7FF",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Explain the idea before the details.",
         "x": 864,
-        "y": 622.6875,
+        "y": 570.6080000000001,
         "w": 930,
-        "h": 58.36,
-        "size": 38,
+        "h": 61.0,
+        "size": 50,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "ellipse",
         "x": 110,
-        "y": 746.84375,
+        "y": 659.817,
         "w": 78,
         "h": 78,
         "fill": "#2B2B2D",
@@ -435,53 +462,57 @@
         "type": "text",
         "text": "3",
         "x": 110,
-        "y": 754.84375,
+        "y": 667.817,
         "w": 78,
-        "h": 63.24,
-        "size": 42,
+        "h": 77.209,
+        "size": 53.45,
         "font": "HelveticaNeue-Bold",
         "color": "#FFB253",
         "bold": true,
-        "align": "center"
+        "align": "center",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Scale the impact",
         "x": 220,
-        "y": 742.84375,
+        "y": 655.817,
         "w": 1540,
-        "h": 87.64,
-        "size": 62,
+        "h": 97.095,
+        "size": 69.75,
         "font": "HelveticaNeue-Bold",
         "color": "#FFB253",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Test in practice",
         "x": 266,
-        "y": 834.84375,
+        "y": 752.912,
         "w": 565,
-        "h": 63.24,
-        "size": 42,
+        "h": 65.209,
+        "size": 53.45,
         "font": "HelveticaNeue",
         "color": "#FFB253",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
-        "text": "Show where the approach makes a difference.",
+        "text": "Show the value in practice.",
         "x": 864,
-        "y": 837.84375,
+        "y": 752.912,
         "w": 930,
-        "h": 58.36,
-        "size": 38,
+        "h": 61.0,
+        "size": 50,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -494,7 +525,8 @@
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "right"
+        "align": "right",
+        "reading_role": "page-number"
       }
     ],
     "notes": "The talk has three connected parts. First, we understand the problem. Then we build a solution. Finally, we show what changes when people use it."
@@ -511,12 +543,13 @@
         "x": 104,
         "y": 110,
         "w": 1712,
-        "h": 119.36,
-        "size": 88,
+        "h": 132.78,
+        "size": 99.0,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -524,114 +557,121 @@
         "x": 108,
         "y": 242,
         "w": 1680,
-        "h": 77.88,
-        "size": 54,
+        "h": 95.8506,
+        "size": 68.73,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "ellipse",
-        "x": 586.0,
-        "y": 494,
-        "w": 188,
-        "h": 188,
+        "x": 470.0,
+        "y": 456,
+        "w": 220,
+        "h": 220,
         "fill": "#36383D"
       },
       {
         "type": "text",
         "text": "YN",
-        "x": 592.0,
-        "y": 550,
-        "w": 176,
-        "h": 85.2,
-        "size": 60,
+        "x": 470.0,
+        "y": 526.0,
+        "w": 220,
+        "h": 94.35,
+        "size": 67.5,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "center"
+        "align": "center",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Your Name",
-        "x": 551.2,
+        "x": 405.2,
         "y": 716,
-        "w": 257.6,
-        "h": 51.04,
-        "size": 32,
+        "w": 349.6,
+        "h": 73.0,
+        "size": 50.0,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "center"
+        "align": "center",
+        "reading_role": "primary"
       },
       {
         "type": "ellipse",
-        "x": 866.0,
-        "y": 494,
-        "w": 188,
-        "h": 188,
+        "x": 850.0,
+        "y": 456,
+        "w": 220,
+        "h": 220,
         "fill": "#36383D"
       },
       {
         "type": "text",
         "text": "CO",
-        "x": 872.0,
-        "y": 550,
-        "w": 176,
-        "h": 85.2,
-        "size": 60,
+        "x": 850.0,
+        "y": 526.0,
+        "w": 220,
+        "h": 94.35,
+        "size": 67.5,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "center"
+        "align": "center",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Coauthor One",
-        "x": 831.2,
+        "x": 785.2,
         "y": 716,
-        "w": 257.6,
-        "h": 51.04,
-        "size": 32,
+        "w": 349.6,
+        "h": 73.0,
+        "size": 50.0,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "center"
+        "align": "center",
+        "reading_role": "primary"
       },
       {
         "type": "ellipse",
-        "x": 1146.0,
-        "y": 494,
-        "w": 188,
-        "h": 188,
+        "x": 1230.0,
+        "y": 456,
+        "w": 220,
+        "h": 220,
         "fill": "#36383D"
       },
       {
         "type": "text",
         "text": "CT",
-        "x": 1152.0,
-        "y": 550,
-        "w": 176,
-        "h": 85.2,
-        "size": 60,
+        "x": 1230.0,
+        "y": 526.0,
+        "w": 220,
+        "h": 94.35,
+        "size": 67.5,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "center"
+        "align": "center",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Coauthor Two",
-        "x": 1111.2,
+        "x": 1165.2,
         "y": 716,
-        "w": 257.6,
-        "h": 51.04,
-        "size": 32,
+        "w": 349.6,
+        "h": 73.0,
+        "size": 50.0,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "center"
+        "align": "center",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -639,12 +679,13 @@
         "x": 104,
         "y": 894,
         "w": 1712,
-        "h": 63.24,
-        "size": 42,
+        "h": 77.209,
+        "size": 53.45,
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "center"
+        "align": "center",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -657,7 +698,8 @@
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "right"
+        "align": "right",
+        "reading_role": "page-number"
       }
     ],
     "notes": "That question led to this work. I’ll start with the idea, then show the evidence."
@@ -674,12 +716,13 @@
         "x": 104,
         "y": 78,
         "w": 1712,
-        "h": 90.08,
-        "size": 64,
+        "h": 99.84,
+        "size": 72.0,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -687,12 +730,13 @@
         "x": 110,
         "y": 280,
         "w": 50,
-        "h": 70.56,
-        "size": 48,
+        "h": 86.52980000000001,
+        "size": 61.09,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -700,64 +744,69 @@
         "x": 174,
         "y": 280,
         "w": 1580,
-        "h": 73.0,
-        "size": 50,
+        "h": 89.6408,
+        "size": 63.64,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "•",
         "x": 110,
-        "y": 408,
+        "y": 415.6408,
         "w": 50,
-        "h": 70.56,
-        "size": 48,
+        "h": 86.52980000000001,
+        "size": 61.09,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Develop a method that addresses the cause.",
         "x": 174,
-        "y": 408,
+        "y": 415.6408,
         "w": 1580,
-        "h": 73.0,
-        "size": 50,
+        "h": 89.6408,
+        "size": 63.64,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "•",
         "x": 110,
-        "y": 536,
+        "y": 551.2816,
         "w": 50,
-        "h": 70.56,
-        "size": 48,
+        "h": 86.52980000000001,
+        "size": 61.09,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Show why the result matters in practice.",
         "x": 174,
-        "y": 536,
+        "y": 551.2816,
         "w": 1580,
-        "h": 73.0,
-        "size": 50,
+        "h": 89.6408,
+        "size": 63.64,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -770,7 +819,8 @@
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "right"
+        "align": "right",
+        "reading_role": "page-number"
       }
     ],
     "notes": "To wrap up this work, there are three things to remember. We found a pattern, built a method around it, and tested whether it helps in practice."
@@ -787,12 +837,13 @@
         "x": 104,
         "y": 78,
         "w": 1712,
-        "h": 90.08,
-        "size": 64,
+        "h": 99.84,
+        "size": 72.0,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "rect",
@@ -805,42 +856,17 @@
       },
       {
         "type": "text",
-        "text": "Scientific impact",
+        "text": "Scientific\nimpact",
         "x": 138,
         "y": 318,
         "w": 478,
-        "h": 70.56,
-        "size": 48,
+        "h": 161.05960000000002,
+        "size": 61.09,
         "font": "HelveticaNeue-Bold",
         "color": "#7ABC73",
         "bold": true,
-        "align": "left"
-      },
-      {
-        "type": "text",
-        "text": "A new finding",
-        "x": 138,
-        "y": 440,
-        "w": 478,
-        "h": 60.8,
-        "size": 40,
-        "font": "HelveticaNeue",
-        "color": "#F6F6F4",
-        "bold": false,
-        "align": "left"
-      },
-      {
-        "type": "text",
-        "text": "A reusable method",
-        "x": 138,
-        "y": 538.8,
-        "w": 478,
-        "h": 60.8,
-        "size": 40,
-        "font": "HelveticaNeue",
-        "color": "#F6F6F4",
-        "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "rect",
@@ -853,42 +879,17 @@
       },
       {
         "type": "text",
-        "text": "Practical impact",
+        "text": "Practical\nimpact",
         "x": 720,
         "y": 318,
         "w": 478,
-        "h": 70.56,
-        "size": 48,
+        "h": 161.05960000000002,
+        "size": 61.09,
         "font": "HelveticaNeue-Bold",
         "color": "#66A7FF",
         "bold": true,
-        "align": "left"
-      },
-      {
-        "type": "text",
-        "text": "Verified adoption",
-        "x": 720,
-        "y": 440,
-        "w": 478,
-        "h": 60.8,
-        "size": 40,
-        "font": "HelveticaNeue",
-        "color": "#F6F6F4",
-        "bold": false,
-        "align": "left"
-      },
-      {
-        "type": "text",
-        "text": "A real deployment",
-        "x": 720,
-        "y": 538.8,
-        "w": 478,
-        "h": 60.8,
-        "size": 40,
-        "font": "HelveticaNeue",
-        "color": "#F6F6F4",
-        "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "rect",
@@ -905,51 +906,111 @@
         "x": 1302,
         "y": 318,
         "w": 478,
-        "h": 70.56,
-        "size": 48,
+        "h": 86.52980000000001,
+        "size": 61.09,
         "font": "HelveticaNeue-Bold",
         "color": "#FFB253",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
-        "text": "Reusable resources",
-        "x": 1302,
-        "y": 440,
+        "text": "A new finding",
+        "x": 138,
+        "y": 509.05960000000005,
         "w": 478,
-        "h": 60.8,
-        "size": 40,
+        "h": 74.11019999999999,
+        "size": 50.91,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
+      },
+      {
+        "type": "text",
+        "text": "A reusable method",
+        "x": 138,
+        "y": 621.1698,
+        "w": 478,
+        "h": 74.11019999999999,
+        "size": 50.91,
+        "font": "HelveticaNeue",
+        "color": "#F6F6F4",
+        "bold": false,
+        "align": "left",
+        "reading_role": "primary"
+      },
+      {
+        "type": "text",
+        "text": "Verified adoption",
+        "x": 720,
+        "y": 509.05960000000005,
+        "w": 478,
+        "h": 74.11019999999999,
+        "size": 50.91,
+        "font": "HelveticaNeue",
+        "color": "#F6F6F4",
+        "bold": false,
+        "align": "left",
+        "reading_role": "primary"
+      },
+      {
+        "type": "text",
+        "text": "A real deployment",
+        "x": 720,
+        "y": 621.1698,
+        "w": 478,
+        "h": 74.11019999999999,
+        "size": 50.91,
+        "font": "HelveticaNeue",
+        "color": "#F6F6F4",
+        "bold": false,
+        "align": "left",
+        "reading_role": "primary"
+      },
+      {
+        "type": "text",
+        "text": "Open resources",
+        "x": 1302,
+        "y": 509.05960000000005,
+        "w": 478,
+        "h": 74.11019999999999,
+        "size": 50.91,
+        "font": "HelveticaNeue",
+        "color": "#F6F6F4",
+        "bold": false,
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Community uptake",
         "x": 1302,
-        "y": 538.8,
+        "y": 621.1698,
         "w": 478,
-        "h": 60.8,
-        "size": 40,
+        "h": 74.11019999999999,
+        "size": 50.91,
         "font": "HelveticaNeue",
         "color": "#F6F6F4",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
-        "text": "Replace every claim with a supported fact and a source in your project.",
+        "text": "Support each claim with evidence.",
         "x": 106,
         "y": 930,
         "w": 1700,
-        "h": 48.6,
-        "size": 30,
+        "h": 73.0,
+        "size": 50,
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -962,7 +1023,8 @@
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "right"
+        "align": "right",
+        "reading_role": "page-number"
       }
     ],
     "notes": "The impact goes beyond a single result. This is where we can point to supported evidence of scientific progress, practical use, and community uptake."
@@ -975,42 +1037,45 @@
     "items": [
       {
         "type": "text",
-        "text": "Thank the people behind the work",
+        "text": "Thank the people\nbehind the work",
         "x": 104,
         "y": 120,
         "w": 1712,
-        "h": 134.0,
-        "size": 100,
+        "h": 286.5,
+        "size": 112.5,
         "font": "HelveticaNeue-Bold",
         "color": "#F6F6F4",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Research is a team effort.",
         "x": 110,
-        "y": 348,
+        "y": 436.5,
         "w": 1650,
-        "h": 82.76,
-        "size": 58,
+        "h": 102.06039999999999,
+        "size": 73.82,
         "font": "HelveticaNeue-Bold",
         "color": "#7ABC73",
         "bold": true,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
         "text": "Advisors and committee\nCollaborators and labmates\nFriends and family",
         "x": 110,
-        "y": 572,
+        "y": 608.5604,
         "w": 1640,
-        "h": 180.35999999999999,
-        "size": 46,
+        "h": 226.29299999999998,
+        "size": 58.55,
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "left"
+        "align": "left",
+        "reading_role": "primary"
       },
       {
         "type": "text",
@@ -1023,7 +1088,8 @@
         "font": "HelveticaNeue",
         "color": "#BAC1CC",
         "bold": false,
-        "align": "right"
+        "align": "right",
+        "reading_role": "page-number"
       }
     ],
     "notes": "I’m grateful to everyone who made this work possible. Thank you for your advice, your collaboration, and your support."

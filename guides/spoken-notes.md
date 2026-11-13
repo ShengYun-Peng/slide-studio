@@ -10,6 +10,8 @@ Short ordinary slides need less script than a narrated animation. Calibrate to t
 
 Use numbers in the form the speaker finds easiest to scan. This profile prefers numerals. Expand an acronym when the audience first needs it, then use the short form consistently. Do not replace an actual method name with an emoji. Scientific pronunciation and proper nouns should be checked against the source, not guessed from transcription errors.
 
+Introduce what a term does before expecting the audience to remember its name: “This score tells us how much learning signal the token gets. Here, its advantage is zero.” Preserve the real technical distinction; do not replace several different quantities with the same friendly nickname. Read sentences aloud and remove word sequences that are awkward to join, even if they are grammatically correct.
+
 ## A useful slide opening
 
 Most evidence slides need three beats:
@@ -27,6 +29,12 @@ For a table:
 > Look at the two highlighted rows. Our method keeps safety high, while the capability scores stay comparable.
 
 This gives the audience a reading task without narrating every cell. Use the same approach for plots, screenshots, attention maps, and multi-step training diagrams. Let the relevant visual appear before referring to it.
+
+For an interactive demonstration, use **intent → action → visible change → meaning**:
+
+> Let's inspect one answer. We click its final token, and the linked card shows its contribution. Here that value is zero, even though the answer is correct.
+
+Do not read every button, tooltip, or heading aloud. Explain the selected evidence and its consequence while the camera is settled on it. Keep timing cues and hold durations in scene metadata. A tighter crop is not a reason to lengthen the script; allow the audience time to find the highlighted value.
 
 ## Transitions are part of the explanation
 

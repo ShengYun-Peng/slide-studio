@@ -14,6 +14,8 @@ Register source files with `ingest`. Extract the paper's problem, contribution b
 
 Classify media as empirical figure, original explanatory illustration, reconstructed illustration, third-party footage, or decorative asset. Keep source and derived material separate. For screenshot or crop-based examples, retain the full original so a reviewer can understand the claimed failure.
 
+If the research contribution is an interactive system, inspect the system itself. Identify a task and a short interaction sequence that demonstrates what the tool makes possible. A deck built mostly from paper figures can summarize the project while leaving the audience unable to understand or use its interface. Follow [interactive talks](interactive-talks.md) for that route.
+
 ## 3. Draft the argument before the slide count
 
 A useful research-talk arc is:
@@ -68,6 +70,8 @@ Supported layout roles are listed in [the layout catalog](../templates/layouts/c
 ## 5. Prove one representative slice
 
 Build a short slice that tests the hardest choices: an opening, a dense method diagram, a table or result, a paper cover, and a motion scene if relevant. Check whether the audience can identify the message without reading notes. A user may review this slice while independent work continues.
+
+For a tool talk, the slice should include a real overview-to-detail interaction, not only static cover and motivation slides. Review it at presentation distance: core reading text follows the chosen profile's size floor, the title describes the visible point, and the audience has one obvious reading target. Compare the sequence with accepted references for hierarchy and continuity, not merely matching colors.
 
 Once the direction is clear, extend it consistently. Do not ask for approval for every routine edit or repeat the same preference question. If the user limits a revision to a prototype slide, honor that boundary before propagating it.
 

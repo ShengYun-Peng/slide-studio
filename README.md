@@ -10,8 +10,9 @@ in a browser to choose a motion pattern. The included **[my-project](my-project/
 is your current presentation folder; its urban-garden content is an illustrative
 example you can replace.
 
-The gallery now contains **15 motion patterns plus a Tesla AI reference variant**.
-The shipped scene configurations use **1920 × 1080 at 60 fps**. The second pass
+The gallery now contains **16 motion patterns plus a Tesla AI reference variant**.
+Legacy demos use **1920 × 1080 at 60 fps**; the new interface walkthrough uses
+**3840 × 2160 at 60 fps** with lossless source states and a single camera. The second pass
 restores more of the defense's production detail: registered photographic
 hardware, the crop-dependent modular sequence, richer training diagrams, and
 vector-derived cinematic edge light. Reusability comes from separating the
@@ -24,7 +25,7 @@ slide-studio/
 ├── START_HERE.md / AGENTS.md / SKILL.md   # entry points for humans and agents
 ├── guides/                              # story, design, scripts, motion, QA, lessons
 ├── templates/                           # theme tokens, layouts, native Keynote sample
-├── scenes/                              # 15 patterns + Tesla variant: config, demo, usage
+├── scenes/                              # 16 patterns + Tesla variant: config, demo, usage
 ├── assets/                              # reusable assets and provenance
 ├── runtime/                             # Python orchestration + catalog-selected Swift renderers
 ├── studio.py                            # one CLI, no API key required
@@ -56,6 +57,12 @@ python3 studio.py gallery
 `assemble` refuses to replace an existing output by default. After manual editing,
 use the Keynote adapter's safe notes-update workflow or build to a new filename;
 do not regenerate over the only edited copy.
+
+For interactive system talks, follow [the tool-talk route](guides/interactive-talks.md)
+and adapt [interface-tour](scenes/interface-tour/USAGE.md). The Anthony dark
+profile uses 72/56/50/50 typography, with 50 as the minimum for core reading text.
+For movie-only revisions, use [the native media replacement helper](guides/keynote-media.md)
+to work on a review copy and verify full trim, poster, autoplay, and embedded bytes.
 
 **What is portable:** documentation, JSON plans, source ingestion, validation,
 and SVG previews use Python 3.9+ and its standard library. There is no hidden

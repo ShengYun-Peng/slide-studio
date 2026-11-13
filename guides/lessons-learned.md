@@ -1,4 +1,4 @@
-# Lessons extracted from the defense workflow
+# Lessons from defense and conference-talk revisions
 
 This is the detailed decision reference. Search by symptom; do not impose every historical preference on every new talk. **Invariant** means accuracy or operational correctness. **Profile** means a default for this research-talk style. **Context** means use the pattern when it supports the current story.
 
@@ -255,3 +255,30 @@ The numerical examples and method names below illustrate editing decisions. They
 ### 60 — Keep final output clean and public release intentional · Invariant + profile
 
 **Before:** every iteration adds another PDF/PPTX and third-party assets enter a public repo without review. **After:** keep the final Keynote prominent, intermediates in build/review locations, and asset provenance separate from software licensing. **Check:** no accidental private material, unsupported license assumption, or publishing step is implied by local organization; the user reviews before any requested release.
+
+
+## Interactive talks and media quality
+
+### 61 — Demonstrate a tool through a real investigation · Context
+
+**Before:** mostly static paper figures describe an interactive system. **After:** one real example moves through overview, selection, focused computation, and interpretation. **Check:** the audience sees what changed and why that interaction is useful. See [interactive talks](interactive-talks.md).
+
+### 62 — Readability requires editing, not tiny text patches · Profile
+
+**Before:** small muted short phrases and unreadable screenshot labels accumulate around the main figure. **After:** retain one clear reading order; the Anthony profile uses 72/56/50/50 type and a 50-unit floor for main reading content. Retype or redraw the needed screenshot terms. **Check:** context-only UI can be small during orientation, but the audience-read result is enlarged before it is discussed.
+
+### 63 — Output resolution is not source resolution · Invariant
+
+**Before:** a 4K container holds an enlarged 1080p capture or a Figma export backed by a small raster. **After:** inspect native pixels and calculate density at the closest zoom; use lossless or higher-density source regions. **Check:** the focused region has enough actual detail, and overlays match the same UI state and CSS bounds.
+
+### 64 — Give one camera control of the zoom · Context
+
+**Before:** browser wheel zoom or panel resize fights an external camera, creating jitter and reversals. **After:** keep one transform system in control, move smoothly, then hold. **Check:** inspect encoded frames around arrivals, not only the final screenshot. See [motion](motion.md).
+
+### 65 — A clean layer must remain clean in motion · Invariant
+
+**Before:** a card carries background dots, covers its own connectors, or loses links at the return to the captured frame. **After:** use an alpha card, actual path geometry, correct layer order, and a checked handoff. **Check:** crops and detail overlays do not expose rectangular seams, including after the camera moves.
+
+### 66 — Native replacement has its own state · Context
+
+**Before:** a movie is imported but saved behind a compatibility dialog; a poster-time edit appears changed without persisting. **After:** complete the known modal workflow before synchronous app calls, save through the tested native path, and verify after reselection. **Check:** source-byte match, full trim, persistent poster, autoplay, manual advance, and unchanged native content. This is version-dependent app behavior, not permission to kill Keynote or dismiss arbitrary dialogs. See [Keynote media](keynote-media.md).

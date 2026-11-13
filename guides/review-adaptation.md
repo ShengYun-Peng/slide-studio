@@ -22,6 +22,8 @@ Before writing over an existing deliverable, establish that the file is current 
 
 Retain a recoverable snapshot of the deliverable for substantial edits. Keep snapshots and source material in the working project's internal locations, not as a growing pile of similarly named final files. Do not delete unfamiliar `.sb-*` or application staging files merely because they look redundant; identify their role and active owner first.
 
+For a movie-only revision, use the [native media workflow](keynote-media.md) in a review copy. Compare native notes, text/styles, geometry, and transitions before and after; changing the movie must not reset unrelated manual edits. Reconfirm the latest original before delivering the revised copy.
+
 ## Generalize the fix within the authorized scope
 
 A reported arrowhead gap suggests checking the same connector recipe elsewhere. A low-contrast axis suggests checking other figures imported from the same source. A notes style defect suggests a representative native test, then consistent application. This is better than waiting for the user to find every instance.

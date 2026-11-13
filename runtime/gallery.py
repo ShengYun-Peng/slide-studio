@@ -40,7 +40,7 @@ def build_gallery(output):
     order = ["device-story", "cinematic-title-reveal--tesla-ai", "framework-to-portfolio",
              "branch-and-merge", "learn-visual-vocabulary", "masked-token-training",
              "surface-build", "surface-trajectories", "video-budget", "text-and-score",
-             "cinematic-title-reveal", "context-zoom", "before-after", "metric-focus",
+             "interface-tour", "cinematic-title-reveal", "context-zoom", "before-after", "metric-focus",
              "research-timeline", "evidence-to-insight"]
     entries.sort(key=lambda e: order.index(e["id"]) if e["id"] in order else len(order))
     cards = []

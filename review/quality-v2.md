@@ -1,5 +1,8 @@
 # Motion gallery v2 — local review
 
+This report records the original 15-pattern baseline. The current gallery also
+includes a [4K60 interface tour and updated readability checks](interface-tour-qa.md).
+
 The gallery contains **15 reusable patterns and one Tesla AI variant**. The
 upgrade preserves more of the original defense's composition and causal
 sequences, with source, configuration, assets, and provenance inside this project.

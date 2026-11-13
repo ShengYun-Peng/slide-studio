@@ -178,5 +178,17 @@
     "quality": "1080p60 \u00b7 original procedural design",
     "license_status": "Original procedural demo; optional reference variants have separate provenance",
     "category": "Narrative"
+  },
+  {
+    "id": "interface-tour",
+    "title": "Interface \u2192 interaction \u2192 readable detail",
+    "description": "Show a real tool state, perform one action, then smoothly focus a high-resolution detail with a stable reading hold.",
+    "config": "scenes/interface-tour/scene.json",
+    "renderer": "runtime/renderers/interface-tour.swift",
+    "demo": "scenes/interface-tour/demo/movie.mp4",
+    "poster": "scenes/interface-tour/demo/poster.png",
+    "category": "Tools",
+    "quality": "4K60 \u00b7 one camera \u00b7 source-density report",
+    "license_status": "Original synthetic UI and values; replace with authorized captures of your tool"
   }
 ]

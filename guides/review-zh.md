@@ -8,9 +8,12 @@
 
 - **风格和版式：** [visual-design.md](visual-design.md)。字号、深色背景、color code、目录页层级、paper 首页、头像和图表都写在这里。它们是可调整的默认风格，不把你的三大 part 或论文名字硬编码成所有人的规则。
 - **讲稿：** [spoken-notes.md](spoken-notes.md)。先告诉观众在看什么，再讲结论；过渡承接上一页；用口语；notes 只留可以说出来的话，也记录了 Keynote 深色 notes 区原生黑字自动适配的问题。
+- **交互工具报告：** [interactive-talks.md](interactive-talks.md)。围绕一个真实例子，从全局界面到点击、放大、局部变化，再解释意义；不把工具介绍做成静态论文截图合集。
 - **动画：** [motion.md](motion.md)。代码定义时间线和对象状态，再逐帧渲染；同时记录如何让多个变化同步，以及视频自动播放和 slide 自动跳页的区别。
-- **迭代经验：** [lessons-learned.md](lessons-learned.md)。60 组具体经验，每组都有问题、修改方向和检查方法。以后新 agent 可以按问题查，不用一次读完。
+- **迭代经验：** [lessons-learned.md](lessons-learned.md)。66 组具体经验，每组都有问题、修改方向和检查方法。以后新 agent 可以按问题查，不用一次读完。
 - **保留手工修改：** [review-adaptation.md](review-adaptation.md)。先看最新保存版本，按内容 ID 定位，避免 slide 号码变化后改错页，也避免覆盖你的手动调整。
+
+新加入的 `interface-tour` 场景可以复用高清界面素材、单一镜头和阅读停留；[Keynote media](keynote-media.md) 提供保留手工编辑的媒体替换流程。Anthony 深色模板的主要阅读文字默认至少50，标题72；4K输出仍需检查原始素材在最大放大时是否够清晰。
 
 CLI 负责重复执行文件检查、预览、渲染和组装。论文理解、科学论点、讲述顺序仍由 agent 根据素材完成；不会因为跑了一个命令就自动得到经过验证的研究报告。
 

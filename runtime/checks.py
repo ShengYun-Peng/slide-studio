@@ -51,7 +51,12 @@ def validate(project_path):
             if min(x,y)<-1 or x+w>m["width"]+1 or y+h>m["height"]+1:report("error",f"Item outside canvas: {item.get('text',item['type'])[:65]}",sid)
             if item["type"]=="text":
                 size=item.get("size",44)
-                if size<28:report("warning",f"Very small text ({size}pt): {item['text'][:55]}",sid)
+                reading_role=item.get("reading_role","primary")
+                floor=theme.get("min_readable_size",28)
+                if item.get("text","").strip() and reading_role not in ("page-number","reference") and size<floor:
+                    report("warning",f"Audience-read text is {size}pt; profile minimum is {floor}pt. Shorten, split, or enlarge: {item['text'][:55]}",sid)
+                if len(item.get("text","").splitlines())*size*1.22>h+2:
+                    report("warning",f"Text height is too small for its lines: {item['text'][:55]}",sid)
                 if max((char_width(line)*size for line in item["text"].split("\n")),default=0)>w+2:report("warning",f"A long word may overflow: {item['text'][:55]}",sid)
                 if contrast(item.get("color",theme["foreground"]),theme["background"])<3:report("warning",f"Low text/background contrast; inspect any panel behind it: {item['text'][:55]}",sid)
             if item["type"]=="image" and not Path(item["path"]).exists():report("error",f"Missing image {item['path']}",sid)

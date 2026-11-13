@@ -1,0 +1,11 @@
+{
+  "actual_duration" : 12,
+  "actual_fps" : 60.000003814697266,
+  "actual_height" : 2160,
+  "actual_width" : 3840,
+  "frames_decoded" : 720,
+  "pass" : true,
+  "reader_completed" : true,
+  "sample_images_decoded" : 4,
+  "timestamps_strictly_increasing" : true
+}

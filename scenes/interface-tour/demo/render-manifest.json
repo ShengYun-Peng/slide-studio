@@ -1,0 +1,9 @@
+{
+  "config": "../scene.json",
+  "duration": 12,
+  "fps": 60,
+  "height": 2160,
+  "source": "Lossless states composed with one deterministic camera; not uninterrupted native screen capture.",
+  "width": 3840,
+  "sha256": "d7174ae05c7433d2e207d88e6401c255d97cd51b9e0cfc53dccbe723e0a96a2d"
+}

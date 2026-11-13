@@ -1,0 +1,34 @@
+{
+  "data_status": "illustrative",
+  "source": "Original synthetic interface drawn by make-assets.swift. No scientific results or captured third-party UI.",
+  "files": {
+    "overview.png": {
+      "css_rect": [
+        0,
+        0,
+        1200,
+        500
+      ],
+      "dpr": 6
+    },
+    "selected.png": {
+      "css_rect": [
+        0,
+        0,
+        1200,
+        500
+      ],
+      "dpr": 6
+    },
+    "selected-detail.png": {
+      "css_rect": [
+        650,
+        60,
+        540,
+        270
+      ],
+      "dpr": 12
+    }
+  },
+  "rebuild": "swift scenes/interface-tour/make-assets.swift scenes/interface-tour"
+}

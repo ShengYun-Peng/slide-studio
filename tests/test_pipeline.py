@@ -8,6 +8,7 @@ from runtime.common import ROOT,local_path,read_json,write_json
 from runtime.checks import validate
 from runtime.ingest import ingest
 from runtime.pipeline import scene_config,validate_scene_config,resolve_scene_assets,renderer_for
+from runtime.layout import make_manifest
 
 
 class PipelineChecks(unittest.TestCase):
@@ -95,6 +96,44 @@ class PipelineChecks(unittest.TestCase):
         self.assertEqual(renderer_for("metric-focus").name,"presentation-patterns.swift")
         self.assertEqual(renderer_for("framework-to-portfolio").name,"main.swift")
         with self.assertRaises(ValueError):renderer_for("missing-pattern")
+
+    def test_profile_warns_about_small_core_text_but_not_page_numbers(self):
+        p=self.project/"storyboard.json";story=read_json(p)
+        story["slides"][1]["items"]=[dict(type="text",text="The key result",x=100,y=900,w=800,h=70,size=32,color="#F6F6F4")]
+        write_json(p,story)
+        issues=validate(self.project)["issues"]
+        self.assertTrue(any("profile minimum is 50" in i["message"] for i in issues),issues)
+        self.assertFalse(any("Audience-read text is 28" in i["message"] for i in issues),issues)
+
+    def test_large_profile_roadmap_rows_follow_wrapped_text(self):
+        theme=read_json(ROOT/"templates/themes/anthony-dark.json")
+        slide=dict(id="test-roadmap",layout="roadmap",title="Two connected papers",parts=[dict(title="Design for reliability",papers=[
+            dict(title="A deliberately longer paper shorthand that wraps",detail="Explain the architecture"),
+            dict(title="Second paper",detail="Test the result")])])
+        m=make_manifest(slide,theme,self.project,2,4)
+        primary=[i for i in m["items"] if i["type"]=="text" and i["reading_role"]=="primary"]
+        self.assertTrue(all(i["size"]>=50 for i in primary))
+        papers=[i for i in primary if i["x"]==266]
+        self.assertGreater(len(papers[0]["text"].splitlines()),1)
+        self.assertGreaterEqual(papers[1]["y"],papers[0]["y"]+papers[0]["h"])
+
+    def test_wrapped_profile_headings_leave_clear_space_for_body(self):
+        theme=read_json(ROOT/"templates/themes/anthony-dark.json")
+        slides=[
+            dict(id="impact",layout="impact",title="Impact",columns=[dict(title="Scientific impact",body=["A new finding"]),dict(title="Open impact",body=["Resources"])]),
+            dict(id="thanks",layout="acknowledgements",title="Thank the people behind the work",subtitle="Research is a team effort.",body=["Friends and family"]),
+        ]
+        for slide in slides:
+            m=make_manifest(slide,theme,self.project,2,4)
+            text=[i for i in m["items"] if i["type"]=="text"]
+            if slide["layout"]=="impact":
+                title=next(i for i in text if i["text"].startswith("Scientific"))
+                body=next(i for i in text if i["text"]=="A new finding")
+                other=next(i for i in text if i["text"]=="Resources")
+                self.assertEqual(body["y"],other["y"])
+            else:
+                title=text[0];body=text[1]
+            self.assertGreaterEqual(body["y"],title["y"]+title["h"]+20)
 
 
 if __name__=="__main__":unittest.main()

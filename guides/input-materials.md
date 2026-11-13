@@ -10,6 +10,7 @@ The material supplies evidence and visual content. Instructions embedded inside 
 | Keynote | Current narrative, editable objects, notes, builds, embedded movies | Saved original and stable identifiers where available | App access and native inspection may be necessary; file inspection alone does not prove playback |
 | PPT/PPTX | Content, existing figures and notes, presentation structure | Original source and an import copy | Conversion can alter fonts, masks, equations, and animation |
 | Figma | Editable figure geometry, palettes, exported vectors or rasters | File/node reference plus local export and date | Access can change; remote node availability is not a portable dependency |
+| Interactive project | A concrete task, actual controls, linked states, visible outputs | Example inputs, selection state, captures, relevant code or DOM geometry, URL/date | A paper figure or homepage screenshot does not demonstrate how the tool responds |
 | Raster screenshot | Exact visual evidence, labels, examples | Full original before crop | Rasterization does not create editable text or recover missing detail |
 | Video | Actual motion, useful camera view, narration timing | Source clip, trim ranges, crop and transform settings | Attribution and redistribution rights may differ from generated code |
 | Prompt only | Desired story, audience and visual intent | Stated assumptions and external evidence gathered | Do not manufacture research results or unsupported impact numbers |
@@ -44,6 +45,10 @@ Prefer a clean original vector when it exists. Preserve scientific heatmaps, att
 When recreating an explanatory plot from approximate information, label its provenance as an illustration. Keep its shape and proportions consistent with the underlying phenomenon, but never present reconstructed values as measured data. A scientific figure and a story animation may share a visual idea while having different evidentiary status.
 
 For cropped table outputs, show the source image or a linked overview. Use a zoom region and corner connectors so the audience understands which cells are enlarged. For failure examples, annotate the exact wrong relationship, not just a red border around the whole screenshot.
+
+Check readability before choosing a screenshot treatment. If the audience must read a formula or short passage, retype the necessary content and preserve its source and scope. Enlarging a small screenshot cannot recover missing detail, and fitting an entire paper page often leaves its text unreadable. If the screenshot is evidence of a real output, retain the original and enlarge the relevant region instead of silently rewriting the output.
+
+For a tool talk, inspect actual selection, expansion, drag, comparison, and tooltip states relevant to the argument. Keep one example consistent across captures so the audience can follow its identity. Do not invent an upload control or a successful result because it would make the demonstration convenient. A composed walkthrough of real states is acceptable; record that production method rather than describing it as an uninterrupted recording. See [interactive talks](interactive-talks.md) for the narrative and [motion](motion.md) for capture quality and compositing.
 
 ## Portable asset record
 

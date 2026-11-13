@@ -21,15 +21,21 @@ The bundled theme uses:
 | Panel | `#36383D` |
 | Part accents | `#7ABC73`, `#66A7FF`, `#FFB253` |
 | Font | Helvetica Neue; bold variant for emphasis |
-| Title / body / label / caption | 64 / 44 / 32 / 28 logical units on 1920 × 1080 |
+| Title / body / label / caption | 72 / 56 / 50 / 50 logical units on 1920 × 1080 |
 | Diagram line | 6 logical units |
 | Presenter notes | 25 pt |
 
-The theme file is the source of truth. These are starting sizes, not an excuse to make important labels 28 units. Enlarge figures and embedded video text until they remain useful at distance. If text does not fit, edit or split the content before reducing it.
+The theme file is the source of truth. For the Anthony conference profile, use **50 logical units as the floor for text the audience needs to read**, including diagram labels and captions. Page numbers and secondary source references may be smaller if they carry no part of the argument. This is a profile preference, not a universal rule for every format.
+
+The same reading test applies inside images and videos: a 12 px interface label can become readable through a focused camera view; a tiny label in a full-interface overview is context, not evidence the audience is expected to read. Higher pixel resolution makes text sharper but does not make it larger on the slide. Some existing scene renderers have their own type sizes, so changing a theme does not establish that every movie label follows it.
+
+If the composition does not fit at that scale, remove secondary material, shorten a label, enlarge the figure, or split the slide. Do not solve density with a cloud of small, pale phrases. One large visual and one useful caption usually give the eye a clearer path than several equally weighted text islands.
 
 ## Titles and hierarchy
 
 A title should tell the audience what the slide contributes. Prefer “Token-level safety signals preserve more useful data” over “Method” when the evidence supports that claim. Method overviews can use a precise descriptive title before the result is established; not every slide needs to announce a discovery.
+
+Use the actual visible problem or action rather than an abstract slogan. A motivation page dominated by equations can say “These objectives are hard to understand from equations alone.” A tool demonstration can say “Click a token to see its learning signal.” Do not use a title about a reward curve when the visual is really showing hard-to-read mathematics. A strong title is direct and source-supported; it need not exaggerate the contribution.
 
 Try a readable one-line title first. Remove redundant setup, use a familiar short expression, and consider `&` where appropriate. When wrapping is needed, use an intentional two-line title with the same vertical anchor and line height as adjacent slides. Do not let a title jump down because it changed layout family.
 
@@ -71,6 +77,14 @@ Choose the treatment that retains meaning. Heatmaps and attention maps often ben
 
 Keep complete reference tables visible for error comparisons. Annotate a wrong merged cell, row/column assignment, or missing content precisely. For a large complex example, show an overview and an enlarged crop linked to the source region.
 
+A screenshot is a source, not a required layout. When its prose or equation would remain too small, select the needed content and typeset it again as native text or clean math. Preserve notation, values, and provenance; state when an equation is a selected term rather than the full objective. Keep the original screenshot only when its appearance is itself evidence, then provide a readable detail view.
+
+## Learn from a design reference
+
+Inspect a complete sequence, including its expanded and comparison states. Record the transferable decision: where attention starts, which component enlarges, what context remains, how colors keep their meaning, and how one interaction changes the visible evidence. Adapt those decisions to this talk's content and reading distance. Copying a palette or rounded panel alone does not reproduce the reference's clarity.
+
+For interactive research projects, see [interactive talks](interactive-talks.md). Favor one continuous example and progressive detail over a tour of unrelated screenshots. A polished interface may still need much larger framing for a conference audience.
+
 ## Diagram geometry
 
 Anchor arrows to objects, not to visually guessed coordinates. Use consistent clearances between an arrow and the box boundary. Curved connectors are useful when three branches would otherwise overlap: keep the middle connection horizontal where natural, with symmetric top/bottom branches. The arrowhead must follow the endpoint tangent and connect to the line without a notch or gap.
@@ -81,7 +95,7 @@ For token and masked-cell diagrams, use inner borders or gutters so adjacent sem
 
 ## People, logos, equations, and details
 
-For circular headshots, locate the head and eyes, then crop to fill. The source photo's geometric center is often not the person's center. Check both the top of the head and face position after the mask. Center the name beneath the circle, and keep spacing uniform across the row.
+For circular headshots, locate the head and eyes, then crop to fill. The source photo's geometric center is often not the person's center. Check both the top of the head and face position after the mask. Center the name beneath the circle, and keep spacing uniform across the row. The same treatment can make the opening author credits more readable and personal; preserve author order, and use two rows when a single row would shrink the names.
 
 Use accurate logo variants with a source record. Awards, oral icons, stars, and company logos have different roles; align them with stable title or end-of-row anchors so they do not compete. Prefer a recognizable simple solid icon over a decorative symbol that needs explanation.
 

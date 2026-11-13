@@ -1,6 +1,7 @@
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 from runtime import keynote
 from runtime.keynote_helpers import primitives
 
@@ -37,6 +38,12 @@ class KeynoteTests(unittest.TestCase):
             code,plain=keynote._notes_script('s','A **strong** statement.',t,'notes',{})
             self.assertEqual(code[-1],'set color of presenter notes of s to {0,0,0}')
             self.assertTrue(any('to 25' in c for c in code))
+
+    def test_left_text_cannot_silently_wrap_over_following_content(self):
+        item=dict(text='Scientific impact',x=100,y=100,w=478,size=61.09,align='left')
+        with tempfile.TemporaryDirectory() as t, patch.object(keynote,'_measure_text',return_value=490):
+            with self.assertRaisesRegex(ValueError,'explicit line break'):
+                keynote._add_text([],item,{},t,'label')
 
 if __name__=='__main__':
     unittest.main()

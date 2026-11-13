@@ -3,6 +3,9 @@
 `anthony-dark-template.key` contains eight native layouts: opening, bridge question,
 comparison, roadmap, paper cover, takeaway, impact, and acknowledgements. They use
 large editable text, charcoal backgrounds, off-white text, and three semantic accents.
+The Anthony profile uses 72/56/50/50 title/body/label/caption tokens and a 50-unit
+floor for audience-read text on a 1920×1080 slide. Display titles may be larger;
+page numbers remain small. Wrapped headings reserve room for the content below.
 The cover uses initials in place of private photos. It is a `.key` starter deck,
 not an installed `.kth` theme and not a screenshot deck.
 
@@ -20,6 +23,9 @@ notes. Keep it with the generated deck when working through the adapter.
 
 - Each explicit text line is a native text box. Its font, color, position, and content
   remain editable in Keynote. This also avoids inherited Keynote paragraph spacing.
+  Assembly measures every line with the actual font, including left-aligned text,
+  and rejects overflow before opening a document. Add a deliberate line break and
+  reserve its height, or widen the field; do not rely on Keynote's silent wrapping.
 - Backgrounds, rounded panels, circles, and arrows are separate PNG objects, not a
   flattened slide. Their editable source geometry lives in the JSON manifest.
 - Photos preserve their aspect ratio and are centered within their slots. Circle
@@ -27,13 +33,16 @@ notes. Keep it with the generated deck when working through the adapter.
   head can be centered even when the original photo is not. The source is untouched.
 - Movies are embedded as native movie objects. Labels inside a rendered movie are
   changed in the scene configuration and re-rendered, not edited as Keynote text.
-  Keynote uses its default movie poster; a custom poster image is used by the
-  preview gallery, not injected through an unsupported native property.
+  Initial assembly uses Keynote's default movie poster. The separate
+  [native movie replacement helper](../../guides/keynote-media.md) can set and
+  verify a persistent poster through the Movie inspector on a review copy.
 - Keynote's native scripting API does not expose movie-start or object-build timing.
   For each imported movie, deselect **Start movie on click** in **Format → Movie**,
   then test in presentation mode. Keep slide advance **On Click** unless the script
   explicitly calls for a continuous sequence. The build report lists every movie
   that needs this check.
+  The replacement helper can also set movie autoplay through the inspector;
+  it does not make slides advance automatically.
 
 ## Notes and manual edits
 
